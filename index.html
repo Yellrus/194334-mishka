@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <svg>
+
+        </svg>
+      </div>
+      <nav class="page-header__nav" role="navigation">
+        <ul class="page-header__nav-list">
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Вязание на заказ</a></li>
+          <li><a href="#">Поиск по сайту</a></li>
+          <li><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__menu-toggle"></div>
+    </div>
+  </header>
+
+  <!--===================СЕКЦИЯ 1 с background===================-->
+
+  <section class="section-top">
+    <div class="section-top__text">
+      <h1 class="section-top__title">
+        Милые штуки ручной работы для дома
+      </h1>
+    </div>
+    <div class="catalog">
+      <a href="" class="catalog__item catalog__item--color-product">Предметы интерьера</a>
+      <a href="" class="catalog__item catalog__item--color-product">Детские игрушки</a>
+    </div>
+  </section>
+</body>
+
+<!--ООСНОВНОЙ КОНТЕНТ-->
+<main class="content" role="main">
+
+  <!--====================СЕКЦИЯ 2 ТОВАР НЕДЕЛИ======================-->
+
+  <section class="product-week">
+    <div class="product-week__text">
+      <h2 class="product-week__title">
+        Вязаные корзинки
+      </h2>
+      <h4 class="product-week__subtitle">
+        Товар недели
+      </h4>
+      <div class="product-week__desc">
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      </div>
+    </div>
+
+    <table class="product-week__table-info">
+      <tr>
+        <td>Цвет:</td>
+        <td>«Тиффани»/серый</td>
+      </tr>
+      <tr>
+        <td>Диаметр:</td>
+        <td>25 см</td>
+      </tr>
+      <tr>
+        <td>Высота:</td>
+        <td>15 см</td>
+      </tr>
+    </table>
+  </section>
+
+  <img class="product-week__img" src="http://placehold.it/150x100" alt="Вязаные корзинки">
+  <div class="product-week__price">
+    Цена: 990 руб.
+  </div>
+  <button class="btn product-week__order">Заказать</button>
+
+  <!--МОДАЛЬНОЕ ОКНО - Добавить в корзину-->
+  <section class="modal-order">
+    <div class="modal-order__text">
+      <h2 class="modal-order__title">
+        Добавить в корзину
+      </h2>
+      <h4 class="modal-order__subtitle">
+        Выберите размер
+      </h4>
+    </div>
+    <section class="modal-order__size">
+      <div class="modal-order__small">S</div>
+      <div class="modal-order__medium">M</div>
+      <div class="modal-order__large">L</div>
+    </section>
+    <a href="#" class="add-cart">Добавить</a>
+  </section>
+
+  <!--====================СЕКЦИЯ 3 КОРОТКО О НАС======================-->
+  <section class="features">
+    <h2 class="features__title">Коротко о нас:</h2>
+    <div class="features__inner">
+      <ul class="features__list">
+        <li class="features__item">Экологически чистые материалы</li>
+        <li class="features__item">Скандинавский стиль по российской цене</li>
+        <li class="features__item">Увеличивает лайки на фотографиях</li>
+        <li class="features__item">Связано вручную с любовью и умилением</li>
+        <li class="features__item">Поддержка отечественного производителя</li>
+        <li class="features__item">Поставляется в подарочной упаковке</li>
+      </ul>
+    </div>
+  </section>
+
+  <!--====================СЕКЦИЯ 4 ОТЗЫВЫ======================-->
+  <section class="reviews">
+    <h2 class="reviews__title">Отзывы</h2>
+    <div class="reviews__content author-reviews">
+      <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+        В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+        больше лайков!</p>
+
+      <div class="author-reviews__name">
+        Анастасия Красильникова
+      </div>
+      <div class="author-reviews__contact">
+        @misssssiskras
+      </div>
+    </div>
+    <div class="reviews__control">
+      <div class="reviews__control-left"></div>
+      <div class="reviews__control-right"></div>
+    </div>
+    <a href="#" class="btn reviews__write">Написать</a>
+  </section>
+
+  <!--====================СЕКЦИЯ 5 КОНТАКТЫ======================-->
+<section class="contact">
+<h2 class="contact__title">Контакты</h2>
+<address class="contact__info">
+<p>e-mail: info@mimimishkashop.ru<p>
+<p>адрес:г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+</address>
+</section>
+<!--====================СЕКЦИЯ 6 КАРТА======================-->
+<section class="map">
+<iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3065083863431!2d30.322779414917548!3d59.93882980977265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1480180967931" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+
+<a class="btn contact__btn" href="form.html">Написать нам</a>
+</main>
+
+<footer class="page-footer">
+<div class="social-footer">
+  <a class="social-footer__item" href="#"></a>
+  <a class="social-footer__item" href="#"></a>
+  <a class="social-footer__item" href="#"></a>
+</div>
+<div class="page-footer__copy">
+Разработано
+</div>
+</footer>
 </html>
