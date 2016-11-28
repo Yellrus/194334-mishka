@@ -8,27 +8,21 @@
 
 <body>
 
-  <header class="page-header">
-    <div class="page-header__top">
-      <div class="page-header__logo">
-        <svg>
-
-        </svg>
-      </div>
-      <nav class="page-header__nav" role="navigation">
-        <ul class="page-header__nav-list">
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Вязание на заказ</a></li>
-          <li><a href="#">Поиск по сайту</a></li>
-          <li><a href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__menu-toggle"></div>
+  <header class="page-header  page-header--no-js">
+    <div class="page-header__logo">
+      <a href="index.html">Главная
+      <svg></svg>
+      </a>
     </div>
+    <nav class="page-header__nav" role="navigation">
+      <a class="page-header__item" href="#">Каталог товаров</a>
+      <a class="page-header__item" href="#">Вязание на заказ</a>
+      <a class="page-header__item  page-header__item--icon  page-header__item--search" href="#">Поиск по сайту</a>
+      <a class="page-header__item  page-header__item--icon  page-header__item--basket" href="#">Корзина: пока пуста</a>
+    </nav>
+    <button class="page-header__menu-toggle" type="button">Меню</button>
   </header>
 
-
-  <!--===================СЕКЦИЯ 1 с серым фоном===================-->
   <section class="form-head">
     <div class="form-head__text">
       <h1 class="form-head__title">
@@ -44,91 +38,96 @@
       </p>
     </div>
 
-    <!--=================== ФОРМА ===================-->
     <form class="main-form" action="#" method="POST">
 
-      <!--Радио выбор "ТИП"-->
       <fieldset class="main-form__border">
-        <legend class="main-form__type-title">Тип</legend>
-        <label for="accessory">Аксессуар для интерьера</label>
-        <input class="main-form__type-product" id="accessory" type="radio" checked name="accessory">
-        <label for="accessory">Детская игрушка</label>
-        <input class="main-form__type-product" type="radio" name="toy" />
+        <legend class="main-form__legend">Тип</legend>
+        <input id="accessory" type="radio" name="accessory" checked>
+        <label class="main-form__radio" for="accessory">Аксессуар для интерьера</label>
+        <input id="toy" type="radio" name="toy">
+        <label class="main-form__radio" for="toy">Детская игрушка</label>
       </fieldset>
 
-      <!--Чекбокс выбор "ЦВЕТ"-->
       <fieldset class="main-form__border">
-        <legend class="main-form__color-title">Цвет</legend>
+        <legend class="main-form__legend">Цвет</legend>
         <div class="check-color-inner">
-          <label for="color-white">Белый</label>
-          <input class="main-form__color-check" id="color-white" name="white" type="checkbox" checked>
-          <label for="color-gray">Серый</label>
-          <input class="main-form__color-check" id="color-gray" name="gray" type="checkbox" checked>
-          <label for="color-tiffany">«Тиффани»</label>
-          <input class="main-form__color-check" id="color-tiffany" name="tiffany" type="checkbox">
-          <label for="color-black">Черный</label>
-          <input class="main-form__color-check" id="color-black" name="black" type="checkbox">
-          <label for="color-pink">Розовый</label>
-          <input class="main-form__color-check" id="color-pink" name="pink" type="checkbox">
-          <label for="color-orange">Оранжевый</label>
-          <input class="main-form__color-check" id="color-orange" name="orange" type="checkbox">
+          <input id="color-white" name="white" type="checkbox" checked>
+          <label class="main-form__chekbox" for="color-white">Белый</label>
+          <input id="color-gray" name="gray" type="checkbox" checked>
+          <label class="main-form__chekbox" for="color-gray">Серый</label>
+          <input id="color-tiffany" name="tiffany" type="checkbox">
+          <label class="main-form__chekbox" for="color-tiffany">«Тиффани»</label>
+          <input id="color-black" name="black" type="checkbox">
+          <label class="main-form__chekbox" for="color-black">Черный</label>
+          <input id="color-pink" name="pink" type="checkbox">
+          <label class="main-form__chekbox" for="color-pink">Розовый</label>
+          <input id="color-orange" name="orange" type="checkbox">
+          <label class="main-form__chekbox" for="color-orange">Оранжевый</label>
         </div>
       </fieldset>
 
-      <!--ФИО-->
       <fieldset class="main-form__border">
-        <legend class="main-form__name-title">ФИО</legend>
-        <label for="form-name">Имя:</label>
-        <input class="main-form__name-enter" type="text" placeholder="Введите ваше имя*" id="form-name" name="name" required>
+        <legend class="main-form__legend">ФИО</legend>
+        <label class="main-form__label" for="form-name">Имя:</label>
+        <input type="text" placeholder="Введите ваше имя*" id="form-name" name="name" required>
 
-        <label for="form-surname">Фамилия:</label>
-        <input class="main-form__surname-enter" type="text" placeholder="Укажите фамилию*" id="form-surname" name="surname" required>
+        <label class="main-form__label" for="form-surname">Фамилия:</label>
+        <input type="text" placeholder="Укажите фамилию*" id="form-surname" name="surname" required>
 
-        <label for="form-middle-name">Отчество:</label>
-        <input class="main-form__middle-name-enter" type="text" placeholder="Отчество, если желаете" id="form-middle-name" name="middle-name">
+        <label class="main-form__label" for="form-middle-name">Отчество:</label>
+        <input type="text" placeholder="Отчество, если желаете" id="form-middle-name" name="middle-name">
       </fieldset>
 
-      <!--Телефон-->
       <fieldset class="main-form__border">
-        <legend class="main-form__tel-title">Тел</legend>
+        <legend class="main-form__legend">Тел</legend>
         <label for="form-tel" hidden>Номер телефона:</label>
-        <input class="main-form__tel" type="text" pattern="+7\[0-9]{3}\[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 XXX XX XX*" id="form-tel"
-          name="tel-number" required>
+        <input class="main-form__tel  main-form__tel--icon  main-form__tel--email" type="tel" pattern="+7\[0-9]{3}\[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          placeholder="+7 XXX XX XX*" id="form-tel" name="tel-number" required>
       </fieldset>
 
-      <!--EMAIL-->
       <fieldset class="main-form__border">
-        <legend class="main-form__email-title">E-mail</legend>
-        <label for="form-email" hidden>Номер телефона:</label>
-        <input class="main-form__email" type="email" placeholder="Ваш Email*" id="form-email" name="email" required>
+        <legend class="main-form__legend">E-mail</legend>
+        <label for="form-email" hidden>email:</label>
+        <input class="main-form__email  main-form__email--icon  main-form__email--email" type="email" placeholder="Ваш Email*" id="form-email"
+          name="email" required>
       </fieldset>
 
-      <!--ДОП-->
       <fieldset class="main-form__border">
-        <legend class="main-form__message-title">Доп</legend>
-        <textarea class="main-form__message-textarea" placeholder="Опишите все ваши пожелания к заказу" name="message" cols="30"
-          rows="7"></textarea>
+        <legend class="main-form__legend">Доп</legend>
+        <textarea class="main-form__message-textarea" placeholder="Опишите все ваши пожелания к заказу" name="message"></textarea>
       </fieldset>
-      <p>*Поля обязательны для заполнения</p>
+      <p class="main-form__rule">*Поля обязательны для заполнения</p>
 
-      <!--ОТПРАВИТЬ-->
-      <input class="btn main-form__btn" type="submit" value="Отправить">
+      <button class="btn main-form__btn" type="submit" value="Отправить">Отправить</button>
 
     </form>
   </div>
 
-  <!--ПОДВАЛ-->
   <footer class="page-footer">
     <div class="social-footer">
-      <a class="social-footer__item" href="#"></a>
-      <a class="social-footer__item" href="#"></a>
-      <a class="social-footer__item" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--instagram" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--facebook" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--twitter" href="#"></a>
     </div>
-    <div class="page-footer__copyright">
-      Разработано
-    </div>
+    <a class="page-footer__copyright">Разработано</a>
   </footer>
 
+  <div class="modal">
+    <div class="modal__overlay">Оверлей</div>
+    <h2 class="modal__title">
+      Добавить в корзину
+    </h2>
+    <h4 class="modal__subtitle">
+      Выберите размер
+    </h4>
+    <section class="modal__sizes">
+      <button class="modal__size" type="button">S</button>
+      <button class="modal__size" type="button">M</button>
+      <button class="modal__size" type="button">L</button>
+    </section>
+    <button class="btn modal__add-basket" type="button">Добавить</button>
+  </div>
 
+</body>
 
-  <!--===================ФОРМА===================-->
+</html>

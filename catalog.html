@@ -8,39 +8,29 @@
 
 <body>
 
-  <header class="page-header">
-    <div class="page-header__top">
-      <div class="page-header__logo">
-        <svg>
-
-        </svg>
-      </div>
-      <nav class="page-header__nav" role="navigation">
-        <ul class="page-header__nav-list">
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Вязание на заказ</a></li>
-          <li><a href="#">Поиск по сайту</a></li>
-          <li><a href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__menu-toggle"></div>
+  <header class="page-header  page-header--no-js">
+    <div class="page-header__logo">
+      <a href="index.html">Главная
+      <svg></svg>
+      </a>
     </div>
+    <nav class="page-header__nav" role="navigation">
+      <a class="page-header__item" href="#">Каталог товаров</a>
+      <a class="page-header__item" href="#">Вязание на заказ</a>
+      <a class="page-header__item  page-header__item--icon  page-header__item--search" href="#">Поиск по сайту</a>
+      <a class="page-header__item  page-header__item--icon  page-header__item--basket" href="#">Корзина: пока пуста</a>
+    </nav>
+    <button class="page-header__menu-toggle" type="button">Меню</button>
   </header>
 
-  <!--===================СЕКЦИЯ 1 с серым фоном===================-->
-  <section class="catalog-top">
-    <div class="catalog-top__text">
-      <h1 class="catalog-top__title">
-        Каталог товаров
-      </h1>
-    </div>
+  <section class="section-top">
+    <h1 class="section-top__title">
+      Каталог товаров
+    </h1>
   </section>
 
-  <!--===================СЕКЦИЯ 2 КАРТОЧКИ ТОВАРА===================-->
-
-  <div class="container">
-    <!-- КАРТОЧКИ ТОВАРА 1-->
-    <section class="product-card">
+  <div class="wrapper">
+    <article class="product-card product-card__margin">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -50,14 +40,14 @@
         </div>
         <div class="product-card__add-cart">
           <span class="product-card__price">1200 руб.</span>
-          <a href="#" class="product-card__add-basket" title="Добавить в корзину"></a>
+          <a href="#" class="product-card__add-basket" title="Добавить в корзину">Добавить в корзину</a>
         </div>
 
       </div>
-    </section>
+    </article>
 
-    <!-- КАРТОЧКИ ТОВАРА 2-->
-    <section class="product-card">
+
+    <article class="product-card product-card__margin">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -67,14 +57,14 @@
         </div>
         <div class="product-card__add-cart">
           <span class="product-card__price">1200 руб.</span>
-          <a href="#" class="product-card__add-basket" title="Добавить в корзину"></a>
+          <a href="#" class="product-card__add-basket" title="Добавить в корзину">Добавить в корзину</a>
         </div>
 
       </div>
-    </section>
+    </article>
 
-    <!-- КАРТОЧКИ ТОВАРА 3-->
-    <section class="product-card">
+
+    <article class="product-card product-card__margin">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -84,58 +74,55 @@
         </div>
         <div class="product-card__add-cart">
           <span class="product-card__price">1200 руб.</span>
-          <a href="#" class="product-card__add-basket" title="Добавить в корзину"></a>
+          <a href="#" class="product-card__add-basket" title="Добавить в корзину">Добавить в корзину</a>
         </div>
 
       </div>
-    </section>
-
-    <!--ПРОЦЕСС ПРОИЗВОДСТВА-->
-    <section class="production-process">
-      <div class="production-process__text">
-        <h2 class="production-process__title">Процесс производства</h2>
-      </div>
-      <video class="production-process__video">
-        <source src="#">
-      </video>
-      <div class="production-proces__inner">
-        <p class="production-proces__desc">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a href="#" class="btn production-proces__order">Сделать заказ</a>
-      </div>
-    </section>
+    </article>
   </div>
 
-  <!--МОДАЛЬНОЕ ОКНО - Добавить в корзину-->
-  <section class="modal-order">
-    <div class="modal-order__text">
-      <h2 class="modal-order__title">
-        Добавить в корзину
-      </h2>
-      <h4 class="modal-order__subtitle">
-        Выберите размер
-      </h4>
+
+  <section class="production-process">
+    <div class="production-process__text">
+      <h2 class="production-process__title">Процесс производства</h2>
     </div>
-    <section class="modal-order__size">
-      <div class="modal-order__small">S</div>
-      <div class="modal-order__medium">M</div>
-      <div class="modal-order__large">L</div>
-    </section>
-    <a href="#" class="add-cart">Добавить</a>
+    <video poster="#" class="production-process__video">
+      <source src="#">
+      <button class="production-process__play" type="button"></button>
+    </video>
+    <div class="production-proces__inner">
+      <p class="production-proces__desc">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a href="#" class="btn production-proces__order">Сделать заказ</a>
+    </div>
   </section>
 
-  <!--ПОДВАЛ-->
   <footer class="page-footer">
     <div class="social-footer">
-      <a class="social-footer__item" href="#"></a>
-      <a class="social-footer__item" href="#"></a>
-      <a class="social-footer__item" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--instagram" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--facebook" href="#"></a>
+      <a class="social-footer__item  social-footer__item--icon  social-footer__item--twitter" href="#"></a>
     </div>
-    <div class="page-footer__copyright">
-      Разработано
-    </div>
+    <a class="page-footer__copyright">Разработано</a>
   </footer>
+
+  <div class="modal">
+    <div class="modal__overlay">Оверлей</div>
+    <h2 class="modal__title">
+      Добавить в корзину
+    </h2>
+    <h4 class="modal__subtitle">
+      Выберите размер
+    </h4>
+    <section class="modal__sizes">
+      <button class="modal__size" type="button">S</button>
+      <button class="modal__size" type="button">M</button>
+      <button class="modal__size" type="button">L</button>
+    </section>
+    <button class="btn modal__add-basket" type="button">Добавить</button>
+  </div>
+
 </body>
 
 </html>
