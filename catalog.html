@@ -30,7 +30,7 @@
   </section>
 
   <div class="wrapper-products">
-    <article class="product-card product-card__margin">
+    <article class="product-card wrapper-products__item">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -47,7 +47,7 @@
     </article>
 
 
-    <article class="product-card product-card__margin">
+    <article class="product-card wrapper-products__item">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -64,7 +64,7 @@
     </article>
 
 
-    <article class="product-card product-card__margin">
+    <article class="product-card wrapper-products__item">
       <img class="product-card__img" src="http://placehold.it/150x100">
       <div class="product-card__inner">
 
@@ -107,24 +107,24 @@
     <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано HTMLAcademy</a>
   </footer>
 
-  <div class="modal">
-    <h2 class="modal__title">
-      Добавить в корзину
-    </h2>
-    <h4 class="modal__subtitle">
-      Выберите размер
-    </h4>
-    <section class="modal__sizes">
-      <button class="modal__size" type="button">S</button>
-      <button class="modal__size" type="button">M</button>
-      <button class="modal__size" type="button">L</button>
-    </section>
-    <button class="btn modal__add-basket" type="button">Добавить</button>
-  </div>
   <div class="modals-wrapper">
-    <div class="modals-wrapper__item modal"></div>
+    <div class="modal modals-wrapper__item ">
+      <h2 class="modal__title">
+        Добавить в корзину
+      </h2>
+      <h4 class="modal__subtitle">
+        Выберите размер
+      </h4>
+      <section class="modal__sizes">
+        <button class="modal__size  modal__size--active" type="button">S</button>
+        <button class="modal__size" type="button">M</button>
+        <button class="modal__size" type="button">L</button>
+      </section>
+      <button class="btn modal__add-basket" type="button">Добавить</button>
+    </div>
     <div class="modals-wrapper__overlay"></div>
   </div>
+
 
 </body>
 
