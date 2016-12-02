@@ -1,24 +1,24 @@
 .section-top {
-  text-align: center;
   width: 100%;
   font-family: $main-font;
   font-weight: 400;
-  color: $color-main;
-  background: #f1f1f1 resolve('hero-mobile@1x.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .section-top__title {
-  max-width: 244px;
-  min-height: 87px;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  background: #f1f1f1;
+  padding: 100px 0 20px 0;
+  text-align: center;
+  &--bg {
+    background: resolve('hero-mobile@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 .section-top__items {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .section-top__item {
   padding: 39.5px 0;
@@ -26,7 +26,7 @@
   font-weight: 700;
   color: $color-white;
   background: $color-secondary;
-      &:nth-child(even) {
-        background: $color-subsecond;
+  &:nth-child(even) {
+    background: $color-subsecond;
   }
 }
