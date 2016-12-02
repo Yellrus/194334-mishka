@@ -4,6 +4,8 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
+var assets  = require("postcss-assets");
+var pxtorem = require("postcss-pxtorem");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
@@ -12,6 +14,10 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss([
       precss(),
+      pxtorem(),
+      assets({
+           loadPaths: ["img/"]
+         }),
       autoprefixer({browsers: [
         "last 2 versions"
       ]})
