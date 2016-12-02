@@ -1,0 +1,15 @@
+.contact__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 44px;
+}
+.contact__info {
+  font-style: normal;
+  color: $grey-color;
+  line-height: 30px;
+}
+.contact__btn {
+  margin: 39px 0 39px;
+}
+

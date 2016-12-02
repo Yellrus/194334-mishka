@@ -1,0 +1,12 @@
+$main-font: Opensans, Arial, sans-serif;
+/* Цвет */
+$color-main: #000000;
+$color-secondary: #63d1bb;
+$color-subsecond: #56c3b2;
+$color-white: #ffffff;
+$color-gray: #444444;
+$table-line: #f1f1f1;
+$control-border: #ececec;
+$modal-border: #c6c6c6;
+$modal-shadow: rgba(0, 1, 1, 0.25);
+

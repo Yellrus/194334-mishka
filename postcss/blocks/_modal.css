@@ -1,0 +1,45 @@
+.modal {
+  padding: 37px 30px 50px 30px;
+  margin-bottom: 50px; /* временно */
+}
+.modal__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal__subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color-gray;
+  text-align: center;
+  margin: 12px 0 28px 0
+}
+.modal__sizes {
+  display: flex;
+  justify-content: center;
+}
+.modal__size {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-gray;
+  background-color: $color-white;
+  border: 2px solid rgba(68,68,68, 0.1);
+  padding: 20px 34px;
+  &:not(:last-child) {
+    margin-right: 7px;
+  };
+  &:active {
+    border-color: $color-secondary;
+}
+}
+.modal__add-basket {
+  margin-top: 20px;
+  background-color: $color-secondary;
+  border: none;
+  color: $color-white;
+}

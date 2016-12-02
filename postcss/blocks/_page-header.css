@@ -1,0 +1,14 @@
+.page-header {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+

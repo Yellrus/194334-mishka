@@ -1,0 +1,28 @@
+.product-card {
+  border:  1px solid $control-border;
+}
+.product-card__inner {
+  padding: 30px 28px 32px 28px;
+}
+.product-card__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.product-card__desc {
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-gray;
+  border-bottom: 1px solid $control-border;
+  }
+  .product-card__add-cart {
+    display: flex;
+    align-items: flex-end;
+  }
+  .product-card__price {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }

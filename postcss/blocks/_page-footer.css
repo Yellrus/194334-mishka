@@ -1,0 +1,16 @@
+.page-footer {
+  background-color: $table-line;
+  min-height: 160px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+
+}
+.social-footer {
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 80px;
+}
+.page-footer__copyright {
+  display: block;
+  margin: 20px;
+}

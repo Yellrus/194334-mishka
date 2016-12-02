@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Opensans;       /* название одно */
+  src: url('../fonts/opensans.woff2'); /* разные файлы */
+  src: url('../fonts/opensans.woff'); /* разные файлы */
+  font-weight: 400;              /* разная плотность */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Opensans;       /* название одно */
+  src: url('../fonts/opensansbold.woff2'); /* разные файлы */
+  src: url('../fonts/opensansbold.woff'); /* разные файлы */
+  font-weight: 700;              /* разная плотность */
+  font-style: normal;
+}
