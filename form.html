@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -11,7 +12,7 @@
   <header class="page-header  page-header--no-js">
     <div class="page-header__logo">
       <a href="index.html">Главная
-      <svg></svg>
+
       </a>
     </div>
     <nav class="page-header__nav" role="navigation">
@@ -30,11 +31,9 @@
   </section>
 
   <div class="container">
-    <div class="form-desc">
-      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
-        детали.
-      </p>
-    </div>
+    <p class="form-desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+      детали.
+    </p>
 
     <form class="main-form" action="#" method="POST">
 
@@ -75,13 +74,13 @@
       <fieldset class="main-form__border">
         <legend class="main-form__legend">Тел</legend>
         <input class="main-form__input-with-icon  main-form__input-with-icon--phone" type="tel" pattern="+7\[0-9]{3}\[0-9]{3}-[0-9]{2}-[0-9]{2}"
-          placeholder="+7 XXX XX XX*" name="tel-number" required>
+        placeholder="+7 XXX XX XX*" name="tel-number" required>
       </fieldset>
 
       <fieldset class="main-form__border">
         <legend class="main-form__legend">E-mail</legend>
         <input class="main-form__input-with-icon  main-form__input-with-icon--email" type="email" placeholder="Ваш Email*" name="email"
-          required>
+        required>
       </fieldset>
 
       <fieldset class="main-form__border">
@@ -90,7 +89,7 @@
       </fieldset>
       <p class="main-form__rule">*Поля обязательны для заполнения</p>
 
-      <button class="btn main-form__btn" type="submit">Отправить</button>
+      <button class="btn main-form__btn" type="submit">Отправить заказ</button>
 
     </form>
   </div>
