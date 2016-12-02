@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -45,25 +46,19 @@
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
       </div>
-      <table class="product-week__table-info">
-        <tr>
-          <td>Цвет:</td>
-          <td>«Тиффани»/серый</td>
-        </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
-        </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
-        </tr>
-      </table>
-      <img class="product-week__img" src="http://placehold.it/150x100" alt="Вязаные корзинки">
+      <dl class="product-week__table-info">
+          <dt>Цвет:</dt>
+          <dd>«Тиффани»/серый</dd>
+          <dt>Диаметр:</dt>
+          <dd>25 см</dd>
+          <dt>Высота:</dt>
+          <dd>15 см</dd>
+      </dl>
+      <img class="product-week__img" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
       <div class="product-week__price">
         Цена: 990 руб.
       </div>
-      <a class="btn product-week__order">Заказать</a>
+      <a href="#" class="btn product-week__order">Заказать</a>
     </section>
 
     <section class="features decor-line">
@@ -96,26 +91,22 @@
         <button class="reviews__control-item reviews__control-item--left" type="button">Влево</button>
         <button class="reviews__control-item reviews__control-item--right" type="button">Вправо</button>
       </div>
-      <a href="#" class="btn reviews__write">Написать</a>
+      <a href="catalog.html" class="btn reviews__write">Написать</a>
     </section>
 
     <section class="contact">
       <h2 class="contact__title">Контакты</h2>
       <address class="contact__info">
-        <table class="contact__table-info">
-          <tr>
-            <td>e-mail:</td>
-            <td><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
-          </tr>
-          <tr>
-            <td>адрес:</td>
-            <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-          </tr>
-        </table>
+        <dl class="contact__table-info">
+          <dt>e-mail:</dt>
+          <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dt>адрес:</dt>
+          <dd>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+        </dl>
       </address>
       <iframe class="contact__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3065083863431!2d30.322779414917548!3d59.93882980977265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1480180967931"
-        width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <a class="btn contact__btn" href="form.html">Написать нам</a>
+      width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <a class="btn contact__btn" href="form.html">Напишите нам</a>
     </section>
   </main>
 
