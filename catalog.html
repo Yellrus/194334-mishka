@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -11,7 +12,7 @@
   <header class="page-header  page-header--no-js">
     <div class="page-header__logo">
       <a href="index.html">Главная
-      <svg></svg>
+
       </a>
     </div>
     <nav class="page-header__nav" role="navigation">
@@ -31,7 +32,7 @@
 
   <div class="wrapper-products">
     <article class="product-card wrapper-products__item">
-      <img class="product-card__img" src="http://placehold.it/150x100">
+      <img class="product-card__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
       <div class="product-card__inner">
 
         <div class="product-card__text">
@@ -48,15 +49,15 @@
 
 
     <article class="product-card wrapper-products__item">
-      <img class="product-card__img" src="http://placehold.it/150x100">
+      <img class="product-card__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
       <div class="product-card__inner">
 
         <div class="product-card__text">
-          <h4 class="product-card__title">Зайчик-попрыгайчик</h4>
-          <p class="product-card__desc">Рост 30 см, вес 200 г</p>
+          <h4 class="product-card__title">Корзинка для белья</h4>
+          <p class="product-card__desc">Диаметр 15 см, высота 10 см</p>
         </div>
         <div class="product-card__add-cart">
-          <span class="product-card__price">1200 руб.</span>
+          <span class="product-card__price">690 руб.</span>
           <a href="#" class="product-card__add-basket" title="Добавить в корзину">Добавить в корзину</a>
         </div>
 
@@ -65,15 +66,15 @@
 
 
     <article class="product-card wrapper-products__item">
-      <img class="product-card__img" src="http://placehold.it/150x100">
+      <img class="product-card__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
       <div class="product-card__inner">
 
         <div class="product-card__text">
-          <h4 class="product-card__title">Зайчик-попрыгайчик</h4>
-          <p class="product-card__desc">Рост 30 см, вес 200 г</p>
+          <h4 class="product-card__title">Большая корзинка для игрушек</h4>
+          <p class="product-card__desc">Диаметр 30 см, высота 30 см</p>
         </div>
         <div class="product-card__add-cart">
-          <span class="product-card__price">1200 руб.</span>
+          <span class="product-card__price">1500 руб.</span>
           <a href="#" class="product-card__add-basket" title="Добавить в корзину">Добавить в корзину</a>
         </div>
 
@@ -86,46 +87,46 @@
     <div class="production-process__text">
       <h2 class="production-process__title">Процесс производства</h2>
     </div>
-    <video poster="#" class="production-process__video">
+    <video class="production-process__video" poster="img/video-mobile@1x.jpg">
       <source src="#">
-      <button class="production-process__play" type="button"></button>
-    </video>
-    <div class="production-process__inner">
-      <p class="production-process__desc">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a href="#" class="btn production-process__order">Сделать заказ</a>
+        <button class="production-process__play" type="button">Play</button>
+      </video>
+      <div class="production-process__inner">
+        <p class="production-process__desc">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a href="#" class="btn production-process__order">Сделать заказ</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="social-footer">
+        <a class="social-footer__item  social-footer__item--instagram" href="#"></a>
+        <a class="social-footer__item  social-footer__item--facebook" href="#"></a>
+        <a class="social-footer__item  social-footer__item--twitter" href="#"></a>
+      </div>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано HTMLAcademy</a>
+    </footer>
+
+    <div class="modals-wrapper">
+      <div class="modal  modals-wrapper__item">
+        <h2 class="modal__title">
+          Добавить в корзину
+        </h2>
+        <h4 class="modal__subtitle">
+          Выберите размер
+        </h4>
+        <section class="modal__sizes">
+          <button class="modal__size  modal__size--active" type="button">S</button>
+          <button class="modal__size" type="button">M</button>
+          <button class="modal__size" type="button">L</button>
+        </section>
+        <button class="btn modal__add-basket" type="button">Добавить</button>
+      </div>
+      <div class="modals-wrapper__overlay"></div>
     </div>
-  </section>
-
-  <footer class="page-footer">
-    <div class="social-footer">
-      <a class="social-footer__item  social-footer__item--instagram" href="#"></a>
-      <a class="social-footer__item  social-footer__item--facebook" href="#"></a>
-      <a class="social-footer__item  social-footer__item--twitter" href="#"></a>
-    </div>
-    <a class="page-footer__copyright" href="https://htmlacademy.ru/">Разработано HTMLAcademy</a>
-  </footer>
-
-  <div class="modals-wrapper">
-    <div class="modal modals-wrapper__item ">
-      <h2 class="modal__title">
-        Добавить в корзину
-      </h2>
-      <h4 class="modal__subtitle">
-        Выберите размер
-      </h4>
-      <section class="modal__sizes">
-        <button class="modal__size  modal__size--active" type="button">S</button>
-        <button class="modal__size" type="button">M</button>
-        <button class="modal__size" type="button">L</button>
-      </section>
-      <button class="btn modal__add-basket" type="button">Добавить</button>
-    </div>
-    <div class="modals-wrapper__overlay"></div>
-  </div>
 
 
-</body>
+  </body>
 
-</html>
+  </html>
