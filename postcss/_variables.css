@@ -1,12 +1,49 @@
-$main-font: Opensans, Arial, sans-serif;
+/* --------- Font-family --------- */
+$main-font: 'Open Sans', Arial, sans-serif;
+$font-bold: 700;
+$font-normal: 400;
+
+/* --------- Colors: Base --------- */
+$color-black: #000000;
+$color-white: #ffffff;
+
+/* --------- Colors: Brand --------- */
+$color-brand: #63d1bb;
+$color-sub-brand: #56c3b2;
+
+/* --------- Colors: Grey --------- */
+$grey-gravel: #444444;
+$grey-whitesmoke: #f1f1f1;
+$grey-snow: #ececec;
+$grey-lightgray: #c6c6c6;
+$grey-whites: #e5e5e5;
+
+/*--------- Modal --------- */
+$modal-shadow: rgba(0, 1, 1, 0.25);
+$modal-border: $grey-lightgray;
+$modal-subtitle: $grey-gravel;
+$modal-btn: $color-brand;
+
+$color-placeholder: $grey-gravel;
+$bg-color: $grey-whitesmoke;
+
+/*--------- Footer --------- */
+$footer-border: $grey-whites;
+
+/*--------- Z-index ---------*/
+$zindex-header: 1000;
+$zindex-nav-mobile: 1200;
+$zindex-notify: 1300;
+$zindex-modal: 1400;
+
+/*--------- button (control,size) --------- */
+$button-border: $grey-snow;
+
+
 /* Цвет */
-$color-main: #000000;
 $color-secondary: #63d1bb;
 $color-subsecond: #56c3b2;
-$color-white: #ffffff;
-$color-gray: #444444;
+
 $table-line: #f1f1f1;
 $control-border: #ececec;
-$modal-border: #c6c6c6;
-$modal-shadow: rgba(0, 1, 1, 0.25);
 
