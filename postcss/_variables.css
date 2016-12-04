@@ -24,9 +24,6 @@ $modal-border: $grey-lightgray;
 $modal-subtitle: $grey-gravel;
 $modal-btn: $color-brand;
 
-$color-placeholder: $grey-gravel;
-$bg-color: $grey-whitesmoke;
-
 /*--------- Footer --------- */
 $footer-border: $grey-whites;
 
@@ -39,11 +36,9 @@ $zindex-modal: 1400;
 /*--------- button (control,size) --------- */
 $button-border: $grey-snow;
 
+/*--------- Фон для header и footer --------- */
+$bg-color: $grey-whitesmoke;
 
-/* Цвет */
-$color-secondary: #63d1bb;
-$color-subsecond: #56c3b2;
-
-$table-line: #f1f1f1;
-$control-border: #ececec;
+/*--------- Form --------- */
+$color-placeholder: $grey-gravel;
 
