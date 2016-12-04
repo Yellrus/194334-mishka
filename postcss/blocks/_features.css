@@ -1,13 +1,16 @@
 .features {
-  font-weight: 700;
+  margin-top: 76px;
 }
 .features__title {
   font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 30px;
+  font-weight: $font-bold;
+  line-height: 1.2;
+  padding-bottom: 30px;
 }
 .features__item {
   font-size: 17px;
-  margin-bottom: 30px;
+  font-weight: $font-bold;
+  line-height: 1.2;
+  padding-bottom: 30px;
 }
 

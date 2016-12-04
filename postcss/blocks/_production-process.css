@@ -1,6 +1,7 @@
 .production-process {
-  margin: 30px;
-  border: 1px solid $control-border;
+  margin: 30px 30px 58px 30px;
+  border: 1px solid $grey-snow;
+  padding-bottom: 33px;
 }
 .production-process__text {
   max-width: 126px;
@@ -8,22 +9,22 @@
 }
 .production-process__title {
   font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
+  font-weight: $font-bold;
+  line-height: 1.41;
 }
 .production-process__inner {
-  margin: 0 34px;
+  padding: 0 43px 0 34px;
 }
 .production-process__desc {
   font-size: 13px;
-  line-height: 24px;
-  color: $color-gray;
+  line-height: 1.85;
+  color: $grey-gravel;
 }
 .production-process__video {
   margin-bottom: 10px;
 }
 .production-process__order {
-  display: block;
-  margin: 30px 0 33px 0;
+  width: 192px;
   padding:  16px 0 16px 0;
+  margin-top: 25px;
 }

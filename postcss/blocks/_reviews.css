@@ -1,24 +1,35 @@
 .reviews__title {
   font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-  margin: 30px 0 30px 0;
+  font-weight: $font-bold;
+  line-height: 1.2;
+  padding-bottom: 25px;
 }
 .reviews__content {
   display: block;
-  font-size: 15px;
-  line-height: 30px;
-  color: $color-gray;
+  font-size: 16px;
+  line-height: 2;
+  color: $grey-gravel;
   margin: 0;
 }
-
-.reviews__control-item {
-  background-color: transparent;
-  border: 1px solid $control-border;
-  margin: 35px 35px;
-  padding: 25px 60px 25px 60px;
+.reviews__control {
+  display: flex;
+  padding-bottom: 36px;
 }
-.reviews__write {
-  margin-bottom: 44px;
+.reviews__control-item {
+  width: 131px;
+  background: transparent;
+  border: 1px solid $button-border;
+  padding: 26px 30px 26px 30px;
+  font-size: 0;
+  &--left {
+    background: resolve('icon-left-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &--right {
+    background: resolve('icon-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 }
 

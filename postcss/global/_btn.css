@@ -1,11 +1,12 @@
 .btn {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
-  color: $color-gray;
+  display: block;
+  max-width: 260px;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 0.89;
+  color: $grey-gravel;
   text-transform: uppercase;
-  border: 2px solid $color-gray;
+  border: 2px solid $grey-gravel;
   text-align: center;
-  padding: 16px 84px 16px 85px;
+  padding: 20px 0;
 }

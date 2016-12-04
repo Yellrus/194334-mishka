@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $table-line;
+  background-color: $bg-color;
   min-height: 160px;
   font-size: 19px;
   font-weight: 700;
@@ -7,7 +7,7 @@
 
 }
 .social-footer {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $grey-whites;
   min-height: 80px;
 }
 .page-footer__copyright {

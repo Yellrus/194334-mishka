@@ -1,15 +1,47 @@
+.contact {
+  margin-top: 95px; /*временно */
+}
 .contact__title {
   font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  margin-top: 44px;
+  font-weight: $font-bold;
+  line-height: 1.67;
 }
 .contact__info {
   font-style: normal;
-  color: $grey-color;
-  line-height: 30px;
+  color: $grey-gravel;
+  line-height: 2;
+}
+.contact__table-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact__dt {
+  width: 50px;
+}
+.contact__dd {
+  width: 164px;
+  &--border {
+    border-bottom: 1px solid $color-brand;
+  }
+}
+.contact__dd,
+.contact__dt {
+  font-size: 15px;
+  line-height: 2;
+  margin-top: 13px;
+  &:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+}
+.contact__dd-link {
+  color: $grey-gravel;
+}
+.contact__map {
+  margin-bottom: 30px;
 }
 .contact__btn {
-  margin: 39px 0 39px;
+  margin: 0 30px;
 }
+
+
 

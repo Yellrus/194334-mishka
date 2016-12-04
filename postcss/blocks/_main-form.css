@@ -1,58 +1,62 @@
+.main-form {
+  margin: 0;
+}
 .main-form__border {
   border: none;
+  margin-bottom: 20px;
 }
 .main-form__legend {
   font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
+  font-weight: $font-bold;
+  line-height: 0.94;
   text-transform: uppercase;
-  color: $color-secondary;
+  color: $color-brand;
 }
 .main-form__radio,
 .main-form__checkbox,
 .main-form__label {
   font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
+  font-weight: $font-bold;
+  line-height: 1.86;
 }
 .main-form__rule {
   font-size: 14px;
-  line-height: 16px;
-  color: $color-gray;
+  line-height: 1.14;
+  color: $grey-gravel;
 }
 .main-form__btn {
+  width: 260px;
   background: transparent;
-  margin-bottom: 55px;
-  padding: 16px 45px;
+  padding: 16px 0;
 }
 
 input::-webkit-input-placeholder {
   font-size: 17px;
-  line-height: 18px;
-  color: $color-gray;
+  line-height: 1.86;
+  color: $color-placeholder;
   opacity: 0.3;
 }
 input:-moz-placeholder {
   font-size: 17px;
-  line-height: 18px;
-  color: $color-gray;
+  line-height: 1.86;
+  color: $color-placeholder;
   opacity: 0.3;
 }
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
   border: none;
-  border-bottom: 2px solid $color-main;
+  border-bottom: 2px solid $color-black;
   padding: 20px 0;
-  min-width: 260px;
+  width: 100%;
   outline: none;
   background: $color-white;
 }
 
 textarea {
-  border: 2px solid $color-main ;
+  border: 2px solid $color-black;
   background: $color-white;
-  min-width: 260px;
+  width: 100%;
   min-height: 142px;
   margin-top: 20px;
 

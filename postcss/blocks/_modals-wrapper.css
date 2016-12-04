@@ -1,4 +1,5 @@
 .modals-wrapper {
+  max-width: 320px;
   border-top: 1px solid $modal-border;
   box-shadow: 0 5px 10px $modal-shadow;
 }
