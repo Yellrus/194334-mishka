@@ -14,7 +14,6 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(postcss([
       precss(),
-      pxtorem(),
       assets({
            loadPaths: ["img/"]
          }),
