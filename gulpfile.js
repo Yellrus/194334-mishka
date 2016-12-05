@@ -5,7 +5,6 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var precss = require("precss");
 var assets  = require("postcss-assets");
-var pxtorem = require("postcss-pxtorem");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
