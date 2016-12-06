@@ -15,21 +15,21 @@
   margin-top: 28px;
   color: $grey-gravel;
 }
-.product-week__table-info {
+.product-week__data-info {
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
   font-size: 15px;
   line-height: 1.33;
 }
-.product-week__dt {
+.product-week__data-title {
   width: 60px;
 }
-.product-week__dd {
+.product-week__data-subtitle {
   width: 129px;
 }
-.product-week__dd,
-.product-week__dt {
+.product-week__data-subtitle,
+.product-week__data-title {
   margin-top: 8px;
   padding-bottom: 10px;
   border-bottom: 1px solid $grey-snow;

@@ -11,21 +11,21 @@
   color: $grey-gravel;
   line-height: 2;
 }
-.contact__table-info {
+.contact__data-info {
   display: flex;
   flex-wrap: wrap;
 }
-.contact__dt {
+.contact__data-title {
   width: 50px;
 }
-.contact__dd {
+.contact__data-subtitle {
   width: 164px;
   &--border {
     border-bottom: 1px solid $color-brand;
   }
 }
-.contact__dd,
-.contact__dt {
+.contact__data-title,
+.contact__data-subtitle {
   font-size: 15px;
   line-height: 2;
   margin-top: 13px;
@@ -33,7 +33,7 @@
     margin-bottom: 20px;
   }
 }
-.contact__dd-link {
+.contact__data-subtitle-link {
   color: $grey-gravel;
 }
 .contact__map {
