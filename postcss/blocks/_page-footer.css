@@ -6,10 +6,6 @@
   line-height: 18px;
 
 }
-.social-footer {
-  border-bottom: 1px solid $grey-whites;
-  min-height: 80px;
-}
 .page-footer__copyright {
   display: block;
   margin: 20px;
