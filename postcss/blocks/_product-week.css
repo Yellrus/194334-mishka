@@ -12,26 +12,24 @@
   margin-top: 8px;
 }
 .product-week__desc {
-  margin-top: 28px;
   color: $grey-gravel;
 }
 .product-week__data-info {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 24px;
   font-size: 15px;
   line-height: 1.33;
 }
-.product-week__data-title {
-  width: 60px;
+.product-week__data-name {
+  width: 37%;
 }
-.product-week__data-subtitle {
-  width: 129px;
+.product-week__data-value {
+  width: 63%;
 }
-.product-week__data-subtitle,
-.product-week__data-title {
-  margin-top: 8px;
-  padding-bottom: 10px;
+.product-week__data-name,
+.product-week__data-value {
+  padding-bottom: 5px;
+  margin-bottom: 12px;
   border-bottom: 1px solid $grey-snow;
 }
 .product-week__img {

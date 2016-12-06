@@ -1,9 +1,7 @@
 .btn {
   display: block;
-  max-width: 260px;
   font-size: 18px;
   font-weight: $font-bold;
-  line-height: 0.89;
   color: $grey-gravel;
   text-transform: uppercase;
   border: 2px solid $grey-gravel;

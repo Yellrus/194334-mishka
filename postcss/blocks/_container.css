@@ -1,13 +1,19 @@
 .container {
-  max-width: 320px;
-  margin: 31px 30px 38px 30px;
+  display: block;
+  width: 320px;
+  margin:0 auto;
+  padding: 0 30px;
 }
 
 @media only screen and (min-width: $tablet) {
-  .container: 768px;
+  .container: {
+    width: 768px;
+  }
 }
 
 @media only screen and (min-width: $desktop) {
-  .container: 1150px;
+  .container: {
+    width: 1150px;
+  }
 }
 

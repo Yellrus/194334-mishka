@@ -17,19 +17,17 @@
 }
 .reviews__control-item {
   width: 131px;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid $button-border;
   padding: 26px 30px 26px 30px;
   font-size: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
   &--left {
-    background: resolve('icon-left-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
+    background-image: resolve('icon-left-arrow.svg');
   }
   &--right {
-    background: resolve('icon-right-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: 50%;
+    background-image: resolve('icon-right-arrow.svg');
 }
 }
 

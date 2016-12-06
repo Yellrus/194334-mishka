@@ -6,7 +6,7 @@ html {
 }
 html, body {
   font-family: $main-font;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: $font-normal;
   line-height: 1.6;
   color: $color-black;
@@ -34,6 +34,39 @@ ul {
 }
 button {
   margin: 0;
+}
+dd,dt {
+  margin: 0;
+}
+input::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 1.86;
+  color: $color-placeholder;
+  opacity: 0.3;
+}
+input:-moz-placeholder {
+  font-size: 17px;
+  line-height: 1.86;
+  color: $color-placeholder;
+  opacity: 0.3;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid $color-black;
+  padding: 20px 0;
+  width: 100%;
+  outline: none;
+  background: $color-white;
+}
+
+textarea {
+  border: 2px solid $color-black;
+  background: $color-white;
+  width: 100%;
+  min-height: 142px;
+  margin-top: 20px;
 }
 
 

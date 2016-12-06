@@ -15,25 +15,22 @@
   display: flex;
   flex-wrap: wrap;
 }
-.contact__data-title {
+.contact__data-name {
   width: 50px;
 }
-.contact__data-subtitle {
+.contact__data-value {
   width: 164px;
   &--border {
     border-bottom: 1px solid $color-brand;
   }
 }
-.contact__data-title,
-.contact__data-subtitle {
+.contact__data-name,
+.contact__data-value {
   font-size: 15px;
   line-height: 2;
   margin-top: 13px;
-  &:nth-child(-n+2) {
-    margin-bottom: 20px;
-  }
 }
-.contact__data-subtitle-link {
+.contact__data-value-link {
   color: $grey-gravel;
 }
 .contact__map {
