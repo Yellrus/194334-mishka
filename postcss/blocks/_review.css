@@ -1,0 +1,16 @@
+.review {
+  padding-bottom: 30px; /*почему-то margin не работает */
+}
+.review__author {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: $font-bold;
+  line-height: 1.33;
+  padding: 25px 0 6px 0;
+}
+.review__contact {
+  font-size: 18px;
+  line-height: 1.67;
+  color: $grey-gravel;
+}

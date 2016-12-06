@@ -1,0 +1,30 @@
+.production-process {
+  margin: 30px 30px 58px 30px;
+  border: 1px solid $grey-snow;
+  padding-bottom: 33px;
+}
+.production-process__text {
+  max-width: 126px;
+  margin: 29px 43px 26px auto;
+}
+.production-process__title {
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 1.41;
+}
+.production-process__inner {
+  padding: 0 43px 0 34px;
+}
+.production-process__desc {
+  font-size: 13px;
+  line-height: 1.85;
+  color: $grey-gravel;
+}
+.production-process__video {
+  margin-bottom: 10px;
+}
+.production-process__order {
+  width: 192px;
+  padding:  16px 0 16px 0;
+  margin-top: 25px;
+}

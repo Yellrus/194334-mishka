@@ -1,0 +1,33 @@
+.reviews__title {
+  font-size: 25px;
+  font-weight: $font-bold;
+  line-height: 1.2;
+  padding-bottom: 25px;
+}
+.reviews__content {
+  display: block;
+  font-size: 16px;
+  line-height: 2;
+  color: $grey-gravel;
+  margin: 0;
+}
+.reviews__control {
+  display: flex;
+  padding-bottom: 36px;
+}
+.reviews__control-item {
+  width: 131px;
+  background-color: transparent;
+  border: 1px solid $button-border;
+  padding: 26px 30px 26px 30px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  &--left {
+    background-image: resolve('icon-left-arrow.svg');
+  }
+  &--right {
+    background-image: resolve('icon-right-arrow.svg');
+}
+}
+

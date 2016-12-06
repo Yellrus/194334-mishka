@@ -1,0 +1,35 @@
+/* Global */
+@import "global/_normalize.css";
+@import "global/_variables.css";
+@import "global/_mixins.css";
+@import "global/_fonts.css";
+@import "global/_scaffolding.css";
+
+/* Block */
+@import "blocks/_btn.css";
+@import "blocks/_page-header.css";
+@import "blocks/_section-top.css";
+@import "blocks/_content.css";
+@import "blocks/_product-week.css";
+@import "blocks/_decor-line.css";
+@import "blocks/_features.css";
+@import "blocks/_review.css";
+@import "blocks/_reviews.css";
+@import "blocks/_contact.css";
+@import "blocks/_product-card.css";
+@import "blocks/_production-process.css";
+@import "blocks/_form-desc.css";
+@import "blocks/_main-form.css";
+@import "blocks/_page-footer.css";
+@import "blocks/_social-footer.css";
+@import "blocks/_modal.css";
+@import "blocks/_modals-wrapper.css";
+@import "blocks/_wrapper-products.css";
+@import "blocks/_container.css";
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.product-card {
+  border:  1px solid $grey-snow;
+}
+.product-card__inner {
+  margin: 20px 0 28px 28px;
+}
+.product-card__title {
+  font-size: 17px;
+  font-weight: $font-bold;
+  line-height: 1.41;
+}
+.product-card__desc {
+  width: 204px;
+  font-size: 13px;
+  line-height: 2.31; /*можно ли уменьить значение,чтобы совпало с perfect pixel*/
+  color: $grey-gravel;
+  border-bottom: 1px solid $grey-snow;
+  padding-bottom: 13px;
+}
+.product-card__add-cart {
+  display: flex;
+  align-items: center;
+}
+.product-card__price {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  font-weight: $font-bold;
+  line-height: 1.6;
+  padding-top: 8px;
+}
+.product-card__add-basket {
+  font-size: 0;
+}
