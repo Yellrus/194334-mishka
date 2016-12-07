@@ -1,21 +1,24 @@
 .product-card {
+  margin-top: 30px;
   border:  1px solid $grey-snow;
 }
 .product-card__inner {
-  margin: 20px 0 28px 28px;
+  padding: 22px 27px 28px 28px;
 }
 .product-card__title {
   font-size: 17px;
   font-weight: $font-bold;
   line-height: 1.41;
+  margin-bottom: 7px;
 }
 .product-card__desc {
   width: 204px;
   font-size: 13px;
-  line-height: 2.31; /*можно ли уменьить значение,чтобы совпало с perfect pixel*/
+  line-height: 2.31;
   color: $grey-gravel;
   border-bottom: 1px solid $grey-snow;
-  padding-bottom: 13px;
+  padding-bottom: 17px;
+  margin-bottom: 22px;
 }
 .product-card__add-cart {
   display: flex;
@@ -27,8 +30,19 @@
   font-size: 15px;
   font-weight: $font-bold;
   line-height: 1.6;
-  padding-top: 8px;
+
 }
 .product-card__add-basket {
   font-size: 0;
+  fill-opacity: 0.2;
+  &:hover #basket {
+    fill-opacity: 1;
+    fill: $color-brand;
+  }
+    &:active #basket {       /* Правилно ли делать так? */
+    fill-opacity: 0.3;
+    fill: $color-brand;
+  }
 }
+
+
