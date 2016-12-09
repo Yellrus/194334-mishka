@@ -6,13 +6,13 @@
 }
 @media (--tablet) {
   .container {
+    padding: 0 50px;
     width: 768px;
   }
 }
 
 @media (--desktop) {
   .container {
-    padding: 0 50px;
     width: 1150px;
   }
 }
