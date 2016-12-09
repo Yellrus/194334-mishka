@@ -8,12 +8,10 @@
   line-height: 1.11;
 
   @media (--tablet) {
-    font-size: 43px;
-    line-height: 1.16;
+    @mixin tablet-title;
   }
   @media (--desktop) {
-    font-size: 53px;
-    line-height: 1.08;
+    @mixin desktop-title;
   }
 
   &--bg {
