@@ -1,5 +1,5 @@
 .modals-wrapper {
-  max-width: 320px;
+  max-width: $container-mobile-width;
   border-top: 1px solid $modal-border;
   box-shadow: 0 5px 10px $modal-shadow;
 }

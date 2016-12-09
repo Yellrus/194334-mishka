@@ -1,24 +1,32 @@
 .product-card {
   margin-top: 30px;
   border:  1px solid $grey-snow;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 .product-card__inner {
   padding: 22px 27px 28px 28px;
+  width: 100%;
 }
 .product-card__title {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 1.41;
   margin-bottom: 7px;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 1.41;
 }
 .product-card__desc {
-  width: 204px;
+  margin-bottom: 22px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $grey-snow;
+  color: $grey-gravel;
   font-size: 13px;
   line-height: 2.31;
-  color: $grey-gravel;
-  border-bottom: 1px solid $grey-snow;
-  padding-bottom: 17px;
-  margin-bottom: 22px;
+
+    @media (min-width: $tablet) {
+    padding-bottom: 175px;
+  }
 }
 .product-card__add-cart {
   display: flex;
@@ -27,21 +35,21 @@
 .product-card__price {
   display: block;
   width: 100%;
-  font-size: 15px;
   font-weight: $font-bold;
+  font-size: 15px;
   line-height: 1.6;
-
 }
 .product-card__add-basket {
   font-size: 0;
   fill-opacity: 0.2;
+
   &:hover #basket {
+    fill: $color-brand;
     fill-opacity: 1;
-    fill: $color-brand;
   }
-    &:active #basket {       /* Правилно ли делать так? */
-    fill-opacity: 0.3;
+  &:active #basket {       /* Правилно ли делать так? */
     fill: $color-brand;
+    fill-opacity: 0.3;
   }
 }
 

@@ -1,30 +1,35 @@
 .production-process {
-  margin: 30px 30px 58px 30px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid $grey-snow;
-  padding-bottom: 33px;
+  padding-bottom: 4px;
+  margin-bottom: 58px;
 }
 .production-process__text {
-  max-width: 126px;
-  margin: 29px 43px 26px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 21px 29px 25px 18px;
 }
 .production-process__title {
+  width: 126px;
   font-size: 17px;
   font-weight: $font-bold;
   line-height: 1.41;
 }
 .production-process__inner {
-  padding: 0 43px 0 34px;
+  padding: 18px 34px 28px 34px;
+  order:;
 }
 .production-process__desc {
   font-size: 13px;
   line-height: 1.85;
   color: $grey-gravel;
+  margin-bottom: 22px;
 }
 .production-process__video {
   margin-bottom: 10px;
 }
 .production-process__order {
-  width: 192px;
-  padding:  16px 0 16px 0;
-  margin-top: 25px;
+  padding:  11px 0;
 }

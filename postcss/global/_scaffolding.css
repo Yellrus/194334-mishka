@@ -19,7 +19,11 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+dd,
+dt,
+button,
+p  {
   margin: 0;
 }
 a {
@@ -31,12 +35,6 @@ li {
 ul {
   margin-left: 0;
   padding-left: 0;
-}
-button {
-  margin: 0;
-}
-dd,dt {
-  margin: 0;
 }
 input::-webkit-input-placeholder {
   font-size: 17px;

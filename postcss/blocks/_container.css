@@ -1,19 +1,21 @@
 .container {
   display: block;
-  width: 320px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0 30px;
+  width: $container-mobile-width;
 }
-
-@media only screen and (min-width: $tablet) {
-  .container: {
+@media (--tablet) {
+  .container {
     width: 768px;
   }
 }
 
-@media only screen and (min-width: $desktop) {
-  .container: {
+@media (--desktop) {
+  .container {
+    padding: 0 50px;
     width: 1150px;
   }
 }
+
+
 

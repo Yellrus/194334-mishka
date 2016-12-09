@@ -16,7 +16,7 @@
   padding-bottom: 36px;
 }
 .reviews__control-item {
-  width: 131px;
+  width: 50%;
   background-color: transparent;
   border: 1px solid $button-border;
   padding: 26px 30px 26px 30px;
