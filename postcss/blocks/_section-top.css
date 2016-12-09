@@ -7,9 +7,18 @@
   font-size: 27px;
   line-height: 1.11;
 
+  @media (--tablet) {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+  @media (--desktop) {
+    font-size: 53px;
+    line-height: 1.08;
+  }
+
   &--bg {
     padding: 72px 38px 123px 38px;
-    background: resolve('hero-mobile@1x.jpg');
+    background: resolve("hero-mobile@1x.jpg");
     background-position: 50% 20%;
     background-repeat: no-repeat;
   }
@@ -18,6 +27,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (--tablet) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 .section-top__item {
   position: relative;
@@ -28,24 +43,28 @@
   font-size: 19px;
   line-height: 1.26;
 
- /* &--icon-interior:after {
-    position: absolute;
-    top: 23px;
-    right: 35px;
-    content:svg-load("C:/Users/User/mishka-proj/img/icon-interior.svg", fill: #149080,fill-opacity: 0.5);
-  }*/
+  @media (--tablet) {
+    font-size: 20px;
+    line-height: 1.5
+  }
+
   &:nth-child(even) {
     background-color: $color-sub-brand;
   }
 }
-.section-top__item-icon {
-  fill: red;
 
-}
 .section-top__inner-items {
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding: 30px 0 27px 29px;
   width: $container-mobile-width;
+
+  @media (--tablet) {
+    padding: 32px 0 27px 29px;
+    width: 334px;
+  }
+  @media (--desktop) {
+    width: 525px;
+  }
 }
