@@ -11,7 +11,8 @@
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
     "postcss-assets": "^4.1.0",
-    "postcss-sorting": "^1.7.0",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-svg": "^1.0.6",
     "precss": "1.4.0"
   },
   "scripts": {
