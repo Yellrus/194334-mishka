@@ -2,13 +2,13 @@
   margin-top: 95px; /*временно */
 }
 .contact__title {
-  font-size: 18px;
   font-weight: $font-bold;
+  font-size: 18px;
   line-height: 1.67;
 }
 .contact__info {
-  font-style: normal;
   color: $grey-gravel;
+  font-style: normal;
   line-height: 2;
 }
 .contact__data-info {
@@ -20,20 +20,22 @@
 }
 .contact__data-value {
   width: 164px;
+
   &--border {
     border-bottom: 1px solid $color-brand;
   }
 }
 .contact__data-name,
 .contact__data-value {
+  margin-top: 13px;
   font-size: 15px;
   line-height: 2;
-  margin-top: 13px;
 }
 .contact__data-value-link {
   color: $grey-gravel;
 }
 .contact__map {
+  position: absolute;
   margin-bottom: 30px;
 }
 .contact__btn {
