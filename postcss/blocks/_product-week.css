@@ -1,51 +1,131 @@
+.product-week {
+ @media (--tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+@media (--desktop) {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: flex-start;
+}
+}
+.product-week__text {
+  @media (--tablet) {
+    display: flex;
+    flex-basis: 645px;
+    align-items: center;
+    margin-bottom: 51px;
+  }
+  @media (--desktop) {
+
+  }
+}
 .product-week__title {
-  font-size: 25px;
-  font-weight: $font-bold;
-  line-height: 1.2;
   margin-bottom: 8px;
+  font-weight: $font-bold;
+  font-size: 25px;
+  line-height: 1.2;
+
+  @media (--tablet) {
+    @mixin tablet-title;
+  }
+  @media (--desktop) {
+    @mixin desktop-title;
+  }
 }
 .product-week__subtitle {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 0.94;
+  margin-bottom: 25px;
   color: $color-brand;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 0.94;
+
+  @media (--tablet) {
+    margin-left: auto;
+    padding-top: 31px;
+    width: 70px;
+    text-align: center;
+  }
+  @media (--desktop) {
+
+  }
 }
 .product-week__desc {
-  color: $grey-gravel;
   margin-bottom: 30px;
+  color: $grey-gravel;
+
+  @media (--tablet) {
+    width: 47%;
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 .product-week__data-info {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
   font-size: 15px;
   line-height: 1.33;
-  margin-bottom: 20px;
+
+  @media (--tablet) {
+    margin-right: 10px;
+
+  }
 }
 .product-week__data-name {
   width: 37%;
+
+  @media (--tablet) {
+
+  }
 }
 .product-week__data-value {
   width: 63%;
+
+  @media (--tablet) {
+  }
 }
 .product-week__data-name,
 .product-week__data-value {
-  padding-bottom: 11px;
   margin-bottom: 8px;
+  padding-bottom: 11px;
   border-bottom: 1px solid $grey-snow;
 }
 .product-week__img {
   margin-bottom: 20px;
+
+  @media (--tablet) {
+    margin-top: -110px;
+    margin-left: 10px;
+    height: 404px;
+  }
+  @media (--desktop) {
+    height: 636px;
+  }
+
 }
 .product-week__price {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 1.41;
+  margin-bottom: 26px;
   color: $grey-gravel;
   text-align: center;
-  margin-bottom: 26px;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 1.41;
+
+  @media (--tablet) {
+   margin-top: -20%;
+   margin-left: 17%;
+ }
+ @media (--desktop) {
+
+ }
 }
 .product-week__order {
   font-size: 17px;
+
+  @media (--tablet) {
+   margin-top: -10%;
+ }
 }
