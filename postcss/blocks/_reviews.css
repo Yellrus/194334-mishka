@@ -1,33 +1,46 @@
 .reviews__title {
-  font-size: 25px;
-  font-weight: $font-bold;
-  line-height: 1.2;
   padding-bottom: 25px;
+  font-weight: $font-bold;
+  font-size: 25px;
+  line-height: 1.2;
+
+  @media (--tablet) {
+    @mixin tablet-title;
+  }
+  @media (--desktop) {
+    @mixin desktop-title;
+  }
 }
 .reviews__content {
   display: block;
-  font-size: 16px;
-  line-height: 2;
-  color: $grey-gravel;
   margin: 0;
+  color: $grey-gravel;
+  font-size: 15px;
+  line-height: 2;
+
+  @media (--tablet) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 .reviews__control {
   display: flex;
   padding-bottom: 36px;
 }
 .reviews__control-item {
-  width: 50%;
-  background-color: transparent;
-  border: 1px solid $button-border;
   padding: 26px 30px 26px 30px;
-  font-size: 0;
-  background-repeat: no-repeat;
+  width: 50%;
+  border: 1px solid $button-border;
+  background-color: transparent;
   background-position: 50%;
+  background-repeat: no-repeat;
+  font-size: 0;
+
   &--left {
     background-image: resolve('icon-left-arrow.svg');
   }
   &--right {
     background-image: resolve('icon-right-arrow.svg');
-}
+  }
 }
 
