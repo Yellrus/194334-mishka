@@ -1,2 +1,24 @@
+.decor-line {
+  position: relative;
+}
+.decor-line::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: svg("img/zigzag.svg") no-repeat;
+  content:'';
+  transform: translateY(51px);
+
+  @media (--tablet) {
+    height: 17px;
+  }
+  @media (--desktop) {
+    height: 23px;
+  }
+}
+
 
 
