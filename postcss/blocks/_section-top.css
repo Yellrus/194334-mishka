@@ -51,6 +51,28 @@
 
   &:nth-child(even) {
     background-color: $color-sub-brand;
+
+    &:hover, &:focus {
+      background-color: $color-hover-sub-brand;
+    }
+  }
+  path {
+    fill: #149080;
+    fill-opacity: 0.5;
+  }
+  &:hover, &:focus {
+    background-color: $color-hover-brand;
+
+    path {
+      fill-opacity: 0.7;
+    }
+  }
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+
+    path {
+      fill-opacity: 0.3;
+    }
   }
 }
 
@@ -67,5 +89,14 @@
   }
   @media (--desktop) {
     width: 525px;
+  }
+}
+.section-top__item-icon {
+  position: absolute;
+  top: 23px;
+  right: 35px;
+
+  &--toy {
+    right: 26px;
   }
 }
