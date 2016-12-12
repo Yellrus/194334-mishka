@@ -160,6 +160,7 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 1.06;
+  &:;
 
   &:-moz-placeholder {
     color: $color-placeholder;
@@ -168,6 +169,12 @@
   &::-webkit-input-placeholder {
     color: $color-placeholder;
     opacity: 0.3;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+  &:hover,&:focus {
+    border: 2px solid $color-checked;
   }
 }
 .main-form__rule {
@@ -197,9 +204,9 @@
     }
   }
 }
- .main-form__name-enter:focus + .main-form__input-icon {
-    fill: $color-checked;
-  }
+.main-form__name-enter:focus + .main-form__input-icon {
+  fill: $color-checked;
+}
 
 .main-form__input-icon {
   position: absolute;
