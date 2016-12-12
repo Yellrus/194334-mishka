@@ -5,10 +5,12 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 7px;
-  background: svg("img/zigzag.svg") no-repeat;
+  background-image: svg("img/zigzag.svg");
+  background-repeat: repeat-x;
   content:'';
   transform: translateY(51px);
 
