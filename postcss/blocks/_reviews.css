@@ -31,21 +31,41 @@
   padding-bottom: 36px;
 }
 .reviews__control-item {
+  position: relative;
   padding: 26px 30px 26px 30px;
   width: 50%;
+  outline: none;
   border: 1px solid $button-border;
   background-color: transparent;
-  background-position: 50%;
-  background-repeat: no-repeat;
   font-size: 0;
 
-  &--left {
-    border-right: none;
-    background-image: resolve("icon-left-arrow.svg");
-
+  &--icon-position::after {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    width: 51px;
+    height: 26px;
+    background-repeat: no-repeat;
+    content: "";
   }
-  &--right {
+  &--left::after {
+    background-image: resolve("icon-left-arrow.svg");
+  }
+  &--right::after {
     background-image: resolve("icon-right-arrow.svg");
   }
+  &--left {
+    border-right: none;
+  }
+  &:hover::after {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &:active::after {
+    opacity: 0.3;
+  }
 }
+
+
+
 
