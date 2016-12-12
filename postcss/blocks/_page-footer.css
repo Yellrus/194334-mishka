@@ -1,12 +1,43 @@
 .page-footer {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-bottom: 11px;
   background-color: $bg-color;
-  min-height: 160px;
+  font-weight: $font-bold;
   font-size: 19px;
-  font-weight: 700;
   line-height: 18px;
-
 }
 .page-footer__copyright {
-  display: block;
-  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  width: 210px;
+  color: $color-black;
+
+  &:active {
+    opacity: 0.3;
+
+  }
+}
+.page-footer__icon-htmlacademy {
+  margin-left: 22px;
+  width: 40px;
+  height: 40px;
+
+  path {
+    fill: $color-brand;
+  }
+  &:hover, &:focus {
+    path {
+      fill: $color-svg;
+    }
+  }
+}
+
+
+.page-footer__font-hidden {
+  font-size: 0;
 }

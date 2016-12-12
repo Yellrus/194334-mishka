@@ -111,9 +111,6 @@
    font-size: 20px;
    line-height: 1.2;
  }
- @media (--desktop) {
-
- }
 }
 .product-week__order {
   font-size: 17px;

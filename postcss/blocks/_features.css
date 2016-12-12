@@ -22,7 +22,6 @@
 .features__list {
   display: flex;
   flex-direction: column;
-  outline: 2px solid yellow;
 
   @media (--tablet) {
     display: flex;
@@ -42,7 +41,6 @@
   position: relative;
   margin-bottom: 30px;
   padding-top: 54px;
-  outline: 2px solid green;
   font-weight: $font-bold;
   font-size: 17px;
   line-height: 1.2;

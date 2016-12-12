@@ -1,5 +1,6 @@
 .form-desc {
+  margin-bottom: 24px;
+  color: $grey-gravel;
   font-size: 13px;
   line-height: 1.85;
-  color: $grey-gravel;
 }

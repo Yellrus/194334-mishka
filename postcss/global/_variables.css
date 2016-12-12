@@ -10,6 +10,8 @@ $color-white: #ffffff;
 /* --------- Colors: Brand --------- */
 $color-brand: #63d1bb;
 $color-sub-brand: #56c3b2;
+$color-svg: #46c1ae;
+$color-checked: #62d1ba;
 
 /* --------- Colors: Grey --------- */
 $grey-gravel: #444444;
@@ -17,6 +19,7 @@ $grey-whitesmoke: #f1f1f1;
 $grey-snow: #ececec;
 $grey-lightgray: #c6c6c6;
 $grey-whites: #e5e5e5;
+$grey-dark: #5e5e5e;
 
 /*--------- Modal --------- */
 $modal-shadow: rgba(0, 1, 1, 0.25);
@@ -33,7 +36,7 @@ $zindex-nav-mobile: 1200;
 $zindex-notify: 1300;
 $zindex-modal: 1400;
 
-/*--------- button (control,size) --------- */
+/*--------- button color (for control,size) --------- */
 $button-border: $grey-snow;
 
 /*--------- Фон для header и footer --------- */
