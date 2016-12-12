@@ -23,7 +23,7 @@ gulp.task("style", function() {
      loadPaths: ["img/"]
    }),
     inlinesvg("options.encode(svg)"),
-    postcssSVG({ defaults: '[fill]: green' }),
+    postcssSVG({ defaults: '[fill]: black' }),
     cssmqpacker()
     ]))
   .pipe(gulp.dest("css"))
