@@ -1,9 +1,10 @@
 .product-card {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
   border:  1px solid $grey-snow;
 
-  @media (min-width: $tablet) {
-    display: flex;
+  @media (--tablet) {
+    flex-direction: row;
   }
 }
 .product-card__inner {
@@ -31,7 +32,7 @@
   font-size: 13px;
   line-height: 2.31;
 
-    @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
     padding-bottom: 175px;
   }
 }
@@ -48,20 +49,21 @@
 }
 .product-card__add-basket {
   font-size: 0;
-  fill-opacity: 0.2;
 
+  path {
+    fill-opacity: 0.2;
+  }
   &:hover, &:focus {
     path {
-    fill: $color-brand;
-    fill-opacity: 1;
-  }
+      fill: $color-brand;
+      fill-opacity: 1;
+    }
   }
   &:active {
     path {
-    fill: $color-brand;
-    fill-opacity: 0.3;
-  }
+      fill: $color-brand;
+      fill-opacity: 0.3;
+    }
   }
 }
-
 

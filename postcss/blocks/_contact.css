@@ -17,7 +17,7 @@
       left: 93%;
       width: 47px;
       height: 82px;
-      background-image: resolve("icon-flag.svg");
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       content:'';
     }

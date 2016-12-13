@@ -49,10 +49,10 @@
     content: "";
   }
   &--left::after {
-    background-image: resolve("icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
   }
   &--right::after {
-    background-image: resolve("icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
   }
   &--left {
     border-right: none;

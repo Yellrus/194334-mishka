@@ -6,8 +6,7 @@
 }
 @media (--tablet) {
   .container {
-    padding: 0 50px;
-    width: 768px;
+    width: 668px;
   }
 }
 

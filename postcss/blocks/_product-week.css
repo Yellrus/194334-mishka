@@ -1,3 +1,6 @@
+.product-week {
+  margin-bottom: 75px;
+}
 .product-week__inner {
  @media (--tablet) {
   display: flex;

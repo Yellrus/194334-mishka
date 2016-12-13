@@ -1,5 +1,4 @@
 .features {
-  margin-top: 70px;
   margin-bottom: 20px;
 }
 .features__title {
@@ -84,7 +83,7 @@
   &--icon-money {
     background: svg("img/icon-feature-3.svg", "[fill]: $color-brand") no-repeat;
   }
-  &--icon-heart:after {
+  &--icon-heart::after {
     position: absolute;
     top: 4px;
     left: 7px;
@@ -93,7 +92,7 @@
   &--icon-ball {
     background: svg("img/icon-feature-2.svg", "[fill]: $color-brand") no-repeat;
   }
-  &--icon-rocket:after {
+  &--icon-rocket::after {
     position: absolute;
     top: 2px;
     left: -5px;
@@ -105,4 +104,3 @@
   }
 
 }
-

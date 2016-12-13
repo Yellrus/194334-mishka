@@ -18,7 +18,7 @@
 }
 .production-process__video {
   width: 100%;
-height: 100%;
+  height: 100%;
 }
 .production-process__icon-video {
   fill: $color-brand;
@@ -57,21 +57,15 @@ height: 100%;
 }
 .production-process__play {
   position: absolute;
-  top: 24%;
-  left: 30%;
-  width: 100.678px;
-  height: 76.891px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   outline: none;
   border: none;
-  background: resolve("icon-play.svg");
-  background-repeat: no-repeat;
+  background: url("../img/icon-play.svg") 50% 50% no-repeat;
   font-size: 0;
   transition: 0.3s;
-
-  @media (--tablet) {
-    top: 40%;
-    left: 42%;
-  }
 
   &:hover, &:focus {
     cursor: pointer;
@@ -83,9 +77,5 @@ height: 100%;
     }
   }
 }
-.production-process__order {
-  @media (--tablet) {
-    order: ;
-  }
-}
+
 
