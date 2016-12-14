@@ -1,21 +1,40 @@
 .product-card {
+  display: flex;
+  flex-direction: column;
   border:  1px solid $grey-snow;
+
+  @media (--tablet) {
+    flex-direction: row;
+  }
 }
 .product-card__inner {
-  margin: 20px 0 28px 28px;
+  padding: 22px 27px 28px 28px;
+  width: 100%;
+
+  &:hover,&:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 .product-card__title {
-  font-size: 17px;
+  margin-bottom: 7px;
   font-weight: $font-bold;
+  font-size: 17px;
   line-height: 1.41;
 }
 .product-card__desc {
-  width: 204px;
-  font-size: 13px;
-  line-height: 2.31; /*можно ли уменьить значение,чтобы совпало с perfect pixel*/
-  color: $grey-gravel;
+  margin-bottom: 22px;
+  padding-bottom: 17px;
   border-bottom: 1px solid $grey-snow;
-  padding-bottom: 13px;
+  color: $grey-gravel;
+  font-size: 13px;
+  line-height: 2.31;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 175px;
+  }
 }
 .product-card__add-cart {
   display: flex;
@@ -24,11 +43,27 @@
 .product-card__price {
   display: block;
   width: 100%;
-  font-size: 15px;
   font-weight: $font-bold;
+  font-size: 15px;
   line-height: 1.6;
-  padding-top: 8px;
 }
 .product-card__add-basket {
   font-size: 0;
+
+  path {
+    fill-opacity: 0.2;
+  }
+  &:hover, &:focus {
+    path {
+      fill: $color-brand;
+      fill-opacity: 1;
+    }
+  }
+  &:active {
+    path {
+      fill: $color-brand;
+      fill-opacity: 0.3;
+    }
+  }
 }
+

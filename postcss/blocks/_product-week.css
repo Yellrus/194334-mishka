@@ -1,49 +1,125 @@
+.product-week {
+  margin-bottom: 75px;
+}
+.product-week__inner {
+ @media (--tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+}
+.product-week__text {
+  @media (--tablet) {
+    display: flex;
+    flex-basis: 645px;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+}
 .product-week__title {
-  font-size: 25px;
+  margin-bottom: 8px;
   font-weight: $font-bold;
+  font-size: 25px;
   line-height: 1.2;
+
+  @media (--tablet) {
+    @mixin tablet-title;
+  }
+  @media (--desktop) {
+    @mixin desktop-title;
+  }
 }
 .product-week__subtitle {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 0.94;
+  margin-bottom: 25px;
   color: $color-brand;
   text-transform: uppercase;
-  margin-top: 8px;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 0.94;
+
+  @media (--tablet) {
+    margin-right: 5px;
+    margin-left: auto;
+    padding-top: 28px;
+    width: 70px;
+    text-align: center;
+  }
 }
 .product-week__desc {
+  margin-bottom: 30px;
   color: $grey-gravel;
+
+  @media (--tablet) {
+    margin-bottom: 35px;
+    width: 47%;
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 .product-week__data-info {
   display: flex;
+  flex-basis: 350px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
   font-size: 15px;
   line-height: 1.33;
+
+  @media (--tablet) {
+    margin-right: 10px;
+  }
 }
 .product-week__data-name {
   width: 37%;
+
+  @media (--tablet) {
+    width: 97px;
+  }
 }
 .product-week__data-value {
   width: 63%;
+
+  @media (--tablet) {
+    width: 190px;
+  }
 }
 .product-week__data-name,
 .product-week__data-value {
-  padding-bottom: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  padding-bottom: 11px;
   border-bottom: 1px solid $grey-snow;
 }
 .product-week__img {
-  margin-top: 14px;
+  margin-bottom: 20px;
+
+  @media (--tablet) {
+    margin-top: -110px;
+    margin-left: 10px;
+    height: 404px;
+  }
+
+
 }
 .product-week__price {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 1.41;
+  margin-bottom: 26px;
   color: $grey-gravel;
   text-align: center;
-  padding: 20px 0 28px 0;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 1.41;
+
+  @media (--tablet) {
+   margin-top: -20%;
+   margin-left: 11.5%;
+   font-size: 20px;
+   line-height: 1.2;
+ }
 }
 .product-week__order {
   font-size: 17px;
-  line-height: 0.94;
+
+  @media (--tablet) {
+    margin-top: -72px;
+    width: 43.5%;
+  }
 }

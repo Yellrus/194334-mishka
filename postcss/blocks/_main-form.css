@@ -2,30 +2,240 @@
   margin: 0;
 }
 .main-form__border {
+  margin-bottom: 7px;
+  padding: 0;
   border: none;
-  margin-bottom: 20px;
+
+  &--type {
+    margin-bottom: 10px;
+  }
+  &--phone {
+    margin: 17px 0;
+  }
+  &--email {
+    margin-bottom: 16px;
+  }
 }
 .main-form__legend {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 0.94;
-  text-transform: uppercase;
+  position: relative;
+  display: block;
+  margin-bottom: 33px;
   color: $color-brand;
-}
-.main-form__radio,
-.main-form__checkbox,
-.main-form__label {
-  font-size: 17px;
+  text-transform: uppercase;
   font-weight: $font-bold;
-  line-height: 1.86;
+  font-size: 17px;
+  line-height: 0.94;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 57px;
+    width: 198px;
+    border: 1px solid $color-brand;
+    content: "";
+
+    @media (--tablet) {
+      display: none;
+    }
+  }
+  &--short-line::after {
+    left: 75px;
+    width: 179px;
+  }
+  &--margin-color {
+    margin-bottom: 26px;
+  }
+  &--margin-name-enter {
+    margin-bottom: 24px;
+  }
+  &--contact-margin {
+    margin-bottom: 8px;
+  }
+
+}
+.main-form__value,
+.main-form__label-value {
+  position: relative;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 1.06;
+}
+.main-form__list {
+  margin: 0;
+}
+
+.main-form__label-value {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+
+  &--radio {
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+}
+
+/* Radio */
+.main-form__input-radio:checked + .main-form__label-value::after {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-checked;
+  content: "";
+  cursor: pointer;
+}
+
+.main-form__label-value--radio::before {
+  flex-shrink: 0;
+  margin-top: -10px;
+  margin-right: 23px;
+  width: 39px;
+  height: 39px;
+  border: 2px solid $grey-gravel;
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+}
+.main-form__label-value:hover::before {
+  border: 2px solid $color-checked;
+}
+.main-form__label-value:active::before {
+  border: 2px solid $grey-gravel;
+  opacity: 0.3;
+}
+
+/* Checkbox */
+.main-form__input-checkbox:checked + .main-form__label-value::after {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 23px;
+  height: 33px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  background-size: 100%;
+  content: "";
+  cursor: pointer;
+}
+.main-form__label-value::before {
+  flex-shrink: 0;
+  margin-right: 23px;
+  width: 40px;
+  height: 39px;
+  border: 2px solid $grey-gravel;
+  content: "";
+  cursor: pointer;
+}
+
+/* ФИО */
+.main-form__value {
+  display: block;
+  padding-top: 10px;
+}
+.main-form__name-enter {
+  margin-bottom: 15px;
+  padding-right: 45px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: $color-white;
+  box-shadow: inset 0 -2px 0 $color-black;
+  white-space: initial;
+  line-height: 1;
+
+  &:hover, &:focus {
+    box-shadow: inset 0 -2px 0 $color-checked;
+  }
+}
+
+.main-form__message-textarea {
+  overflow: auto;
+  margin-top: 20px;
+  padding: 14px 12px;
+  min-height: 142px;
+  width: 100%;
+  height: 142px;
+  outline: none;
+  border: 2px solid $color-black;
+  background: transparent;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.06;
+  resize: vertical;
+
+  &::placeholder {
+    color: $color-placeholder;
+    opacity: 0.3;
+  }
+  &:hover,&:focus {
+    border: 2px solid $color-checked;
+  }
 }
 .main-form__rule {
+  margin-bottom: 35px;
+  color: $grey-gravel;
   font-size: 14px;
   line-height: 1.14;
-  color: $grey-gravel;
 }
 .main-form__btn {
-  width: 260px;
-  background: transparent;
-  padding: 16px 0;
+  margin-bottom: 50px;
+  padding: 14px 0;
+  background-color: $color-white;
 }
+.main-form__inner {
+  position: relative;
+
+  path {
+    fill-opacity: 0.2;
+  }
+  &:hover, &:focus {
+    .main-form__name-enter {
+      box-shadow: inset 0 -2px 0 $color-checked;
+    }
+    path {
+      fill: $color-checked;
+      fill-opacity: 1;
+    }
+  }
+}
+.main-form__name-enter:focus + .main-form__input-icon {
+  path {
+    fill: $color-checked;
+    fill-opacity: 1;
+  }
+}
+.main-form__input-icon {
+  position: absolute;
+  top: 9px;
+  right: 2px;
+  pointer-events: none;
+
+  &--phone {
+    top: 8px;
+    right: 6px;
+  }
+}
+.main-form__visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+

@@ -1,34 +1,117 @@
 .page-header {
   position: relative;
-}
-.page-header__nav {
-  display: flex;
 
-  flex-direction: column;
-  z-index: $zindex-nav-mobile;
+  &--no-js {
+    display: block;
+  }
 }
-.page-header__item {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 1.41;
-  color: $color-black;
-  text-align: center;
-  padding: 32px 0 30px 0;
-  &:not(:last-child) {
-  box-shadow: inset 0 1px 0 $grey-snow, 0 1px 0 $grey-snow;
-}
-}
-.page-header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 79px; /* временно */
-}
-.page-header__menu-toggle {
+
+.page-header__hamburger {
   position: absolute;
   top: 27px;
   right: 27px;
+  width: 21px;
+  height: 21px;
+  outline: none;
+  border: none;
+  background: url("../img/icon-menu-open.svg") no-repeat;
+  font-size: 0;
+  cursor: pointer;
 }
+.page-header__nav {
+  z-index: $zindex-nav-mobile;
+
+  @media (--tablet) {
+    flex-direction: row ;
+    justify-content: space-between;
+  }
+}
+.page-header__item {
+  position: relative;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  padding: 28px 0 28px 23.5%;
+  color: $color-black;
+  font-weight: $font-bold;
+  font-size: 17px;
+  line-height: 1.41;
+
+  @media (--tablet) {
+    box-shadow: none;
+  }
+
+  &:not(:last-child) {
+    box-shadow: inset 0 1px 0 $grey-snow, 0 1px 0 $grey-snow;
+  }
+  path {
+    fill-opacity: 0.2;
+  }
+  &:hover, &:focus {
+    color: rgba(0, 0, 0, 0.6);
+
+    path {
+      fill: $color-brand;
+      fill-opacity: 1;
+    }
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    path {
+      fill: $color-brand;
+      fill-opacity: 0.3;
+    }
+  }
+  &--deliver {
+    font-weight: 400;
+  }
+}
+
+.page-header__item-icon {
+  position: absolute;
+  top: 29px;
+  left: 32px;
+
+  @media (--tablet) {
+    display: none;
+  }
+}
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
+.page-header__deliver {
+  display: none;
+}
+.page-header__new-sale {
+  display: none;
+}
+.page-header__search-basket {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

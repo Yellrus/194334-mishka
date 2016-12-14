@@ -1,47 +1,90 @@
 .modal {
-  padding: 37px 30px 50px 30px;
-  margin-bottom: 50px; /* временно */
-  z-index: $zindex-modal;
+  padding: 37px 30px 47px 30px;
+  max-width: $container-mobile-width;
+  border-top: 1px solid $modal-border;
+  background-color: $color-white;
+  box-shadow: 0 5px 10px $modal-shadow;
+
+  @media (--tablet) {
+    max-width: 568px;
+  }
 }
 .modal__title {
-  font-size: 25px;
-  font-weight: $font-bold;
-  line-height: 1.2;
-  text-transform: uppercase;
+  margin-top: -9px;
+  margin-bottom: 14px;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: 25px;
+  line-height: 1.2;
+
+  @media (--tablet) {
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 1.9;
+  }
+}
+
+.modal__data-indent {
+  @mixin pre-indent;
+
+  @media (--tablet) {
+    &:after {
+      content:"\a";
+      white-space: normal;
+    }
+  }
 }
 .modal__subtitle {
-  font-size: 15px;
-  font-weight: $font-normal;
-  line-height: 2;
+  margin-bottom: 25px;
   color: $modal-subtitle;
   text-align: center;
-  margin: 12px 0 28px 0
+  font-weight: $font-normal;
+  font-size: 15px;
+  line-height: 2;
+
+  @media (--tablet) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }
 .modal__sizes {
   display: flex;
   justify-content: center;
 }
 .modal__size {
-  font-size: 17px;
-  font-weight: $font-bold;
-  line-height: 0.94;
-  text-transform: uppercase;
-  background-color: $color-white;
+  margin-bottom: 30px;
+  padding: 14px 33px;
+  outline: none;
   border: 2px solid $button-border;
-  padding: 20px 34px;
+  background-color: $color-white;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: 17px;
+
+  @media (--tablet) {
+    padding: 14px 48px;
+  }
+
   &:not(:last-child) {
     margin-right: 7px;
   };
-  &:active {
+  &--active {
     border-color: $color-brand;
-}
+  }
+  &:hover {
+    border: 2px solid rgba(68,68,68,0.3);
+  }
 }
 .modal__add-basket {
-  font-size: 17px;
-  margin-top: 20px;
-  background-color: $modal-btn;
+  padding: 17px 0;
   border: none;
+  background-color: $modal-btn;
   color: $color-white;
-  padding: 20px 0 16px 0;
+  font-size: 17px;
+
+  @media (--tablet) {
+    margin: 0 auto;
+    width: 68%;
+  }
 }

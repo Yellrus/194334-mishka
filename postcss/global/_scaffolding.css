@@ -5,12 +5,12 @@ html {
   box-sizing: inherit;
 }
 html, body {
-  font-family: $main-font;
-  font-size: 15px;
-  font-weight: $font-normal;
-  line-height: 1.6;
-  color: $color-black;
   background-color: $color-white;
+  color: $color-black;
+  font-weight: $font-normal;
+  font-size: 15px;
+  font-family: $main-font;
+  line-height: 1.6;
 }
 img {
   max-width: 100%;
@@ -19,7 +19,11 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+dd,
+dt,
+button,
+p  {
   margin: 0;
 }
 a {
@@ -32,42 +36,28 @@ ul {
   margin-left: 0;
   padding-left: 0;
 }
-button {
-  margin: 0;
+
+input[type=radio],
+input[type=checkbox] {
+  display: none;
 }
-dd,dt {
-  margin: 0;
-}
+
+
 input::-webkit-input-placeholder {
+  color: $color-placeholder;
   font-size: 17px;
   line-height: 1.86;
-  color: $color-placeholder;
   opacity: 0.3;
 }
 input:-moz-placeholder {
+  color: $color-placeholder;
   font-size: 17px;
   line-height: 1.86;
-  color: $color-placeholder;
   opacity: 0.3;
 }
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  border: none;
-  border-bottom: 2px solid $color-black;
-  padding: 20px 0;
-  width: 100%;
-  outline: none;
-  background: $color-white;
-}
 
-textarea {
-  border: 2px solid $color-black;
-  background: $color-white;
-  width: 100%;
-  min-height: 142px;
-  margin-top: 20px;
-}
+
+
 
 
 

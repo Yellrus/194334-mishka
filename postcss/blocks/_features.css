@@ -1,16 +1,106 @@
 .features {
-  margin-top: 76px;
+  margin-bottom: 20px;
 }
 .features__title {
-  font-size: 25px;
+  margin-bottom: 30.5px;
   font-weight: $font-bold;
+  font-size: 25px;
   line-height: 1.2;
-  padding-bottom: 30px;
+
+  @media (--tablet) {
+    margin-bottom: 53px;
+    font-size: 43px;
+    line-height: 1.08;
+  }
+  @media (--desktop) {
+    margin-bottom: 50px;
+    padding-left: 192px;
+    font-size: 53px
+  }
+}
+.features__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (--tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+  }
+  @media (--desktop) {
+    justify-content: flex-start;
+    margin-right: auto;
+    margin-left: auto;
+    width: 693px;
+  }
 }
 .features__item {
-  font-size: 17px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 54px;
   font-weight: $font-bold;
+  font-size: 17px;
   line-height: 1.2;
-  padding-bottom: 30px;
-}
 
+  @media (--tablet) {
+    margin-bottom: 50px;
+    width: 300px;
+    font-size: 20px;
+
+    @media (--desktop) {
+      margin-right: 46px;
+      margin-bottom: 54px;
+    }
+
+    &--icon-flower {
+      order:-1;
+    }
+    &--icon-money {
+      order: 2;
+    }
+    &--icon-heart {
+      order: 3;
+    }
+    &--icon-ball {
+      order: 1;
+    }
+    &--icon-rocket {
+      order: 2;
+    }
+    &--icon-gift {
+      order: 3;
+    }
+  }
+
+  &--icon-flower:after {
+    position: absolute;
+    top:0;
+    left: 7px;
+    content: svg("img/icon-feature-1.svg", "[fill]: $color-brand");
+  }
+  &--icon-money {
+    background: svg("img/icon-feature-3.svg", "[fill]: $color-brand") no-repeat;
+  }
+  &--icon-heart::after {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    content: svg("img/icon-feature-5.svg", "[fill]: $color-brand");
+  }
+  &--icon-ball {
+    background: svg("img/icon-feature-2.svg", "[fill]: $color-brand") no-repeat;
+  }
+  &--icon-rocket::after {
+    position: absolute;
+    top: 2px;
+    left: -5px;
+    content: svg("img/icon-feature-4.svg", "[fill]: $color-brand");
+
+  }
+  &--icon-gift {
+    background: svg("img/icon-feature-6.svg", "[fill]: $color-brand") no-repeat;
+  }
+
+}
