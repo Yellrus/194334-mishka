@@ -43,21 +43,9 @@ input[type=checkbox] {
 }
 
 
-input::-webkit-input-placeholder {
+input::placeholder {
   color: $color-placeholder;
   font-size: 17px;
   line-height: 1.86;
   opacity: 0.3;
 }
-input:-moz-placeholder {
-  color: $color-placeholder;
-  font-size: 17px;
-  line-height: 1.86;
-  opacity: 0.3;
-}
-
-
-
-
-
-
