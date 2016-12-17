@@ -13,12 +13,21 @@
   content:"";
 
   @media (--tablet) {
+    bottom: -93px;
     height: 17px;
   }
   @media (--desktop) {
     height: 23px;
   }
 }
+.decor-line--position-top::after {
+  bottom: -45px;
+
+  @media (--tablet) {
+    bottom: -45px;
+  }
+}
+
 
 
 

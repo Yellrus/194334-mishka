@@ -1,7 +1,30 @@
 .reviews {
-  margin-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 83px;
+
+  @media (--tablet) {
+    margin-bottom: 159px;
+  }
+}
+.reviews__wrapper {
+  @media (--tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.reviews__write {
+  @media (--tablet) {
+    order: -1;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: auto;
+  }
 }
 .reviews__title {
+  order: -2;
   padding-bottom: 25px;
   font-weight: $font-bold;
   font-size: 25px;
@@ -9,6 +32,8 @@
 
   @media (--tablet) {
     @mixin tablet-title;
+
+    margin-bottom: 25px;
   }
   @media (--desktop) {
     @mixin desktop-title;
@@ -22,24 +47,45 @@
   line-height: 2;
 
   @media (--tablet) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 17px;
     line-height: 1.76;
   }
 }
+.reviews__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
 .reviews__control {
   display: flex;
-  padding-bottom: 36px;
+  margin-bottom: 36px;
+
+  @media (--tablet) {
+   /* position: absolute;
+    right: 30px;
+    bottom: -4px;*/
+    margin-top: -85px;
+    margin-left: auto;
+  }
 }
 .reviews__control-item {
   position: relative;
   padding: 26px 30px 26px 30px;
-  width: 50%;
+  width: 130px;
   outline: none;
   border: 1px solid $button-border;
   background-color: transparent;
   font-size: 0;
 
-  &--icon-position::after {
+  @media (--tablet) {
+    width: 95px;
+    border: none;
+  }
+
+  &--icon-arrow::after {
     position: absolute;
     top: 12px;
     left: 40px;
@@ -50,21 +96,30 @@
   }
   &--left::after {
     background-image: url("../img/icon-left-arrow.svg");
-  }
-  &--right::after {
-    background-image: url("../img/icon-right-arrow.svg");
-  }
-  &--left {
-    border-right: none;
-  }
-  &:hover::after {
-    opacity: 0.6;
-    cursor: pointer;
-  }
-  &:active::after {
-    opacity: 0.3;
-  }
+
+    @media (--tablet) {
+     left: 35px;
+   }
+ }
+ &--right::after {
+  background-image: url("../img/icon-right-arrow.svg");
+
+  @media (--tablet) {
+   left: 26px;
+ }
 }
+&--left {
+  border-right: none;
+}
+&:hover::after {
+  opacity: 0.6;
+  cursor: pointer;
+}
+&:active::after {
+  opacity: 0.3;
+}
+}
+
 
 
 

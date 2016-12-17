@@ -1,5 +1,12 @@
 .features {
   margin-bottom: 20px;
+
+  @media (--tablet) {
+    margin-bottom: 110px;
+  }
+  @media (--desktop) {
+
+  }
 }
 .features__title {
   margin-bottom: 30.5px;
@@ -8,14 +15,15 @@
   line-height: 1.2;
 
   @media (--tablet) {
+    @mixin tablet-title;
+
     margin-bottom: 53px;
-    font-size: 43px;
-    line-height: 1.08;
   }
   @media (--desktop) {
+    @mixin desktop-title;
+
     margin-bottom: 50px;
     padding-left: 192px;
-    font-size: 53px
   }
 }
 .features__list {
@@ -27,7 +35,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
   }
   @media (--desktop) {
     justify-content: flex-start;
@@ -38,8 +46,10 @@
 }
 .features__item {
   position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
   padding-top: 54px;
+  word-wrap: break-word;
   font-weight: $font-bold;
   font-size: 17px;
   line-height: 1.2;

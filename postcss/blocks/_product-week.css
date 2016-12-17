@@ -1,21 +1,25 @@
 .product-week {
-  margin-bottom: 75px;
-}
-.product-week__inner {
- @media (--tablet) {
+  margin-bottom: 70px;
 
-}
+  @media (--tablet) {
+    margin-bottom: 90px;
+  }
 }
 .product-week__text {
   @media (--tablet) {
     display: flex;
-    flex-basis: 645px;
     align-items: center;
-    margin-bottom: 28px;
+    margin-bottom: 31px;
+  }
+  @media (--desktop) {
+    position: relative;
+    z-index: 50;
+    margin-bottom: 32px;
+    padding-left: 47px;
   }
 }
 .product-week__title {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: $font-bold;
   font-size: 25px;
   line-height: 1.2;
@@ -25,10 +29,16 @@
   }
   @media (--desktop) {
     @mixin desktop-title;
+
+    flex: 1;
+    order: 2;
+    overflow: hidden;
+        text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 .product-week__subtitle {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   color: $color-brand;
   text-transform: uppercase;
   font-weight: $font-bold;
@@ -36,25 +46,53 @@
   line-height: 0.94;
 
   @media (--tablet) {
-    margin-right: 5px;
+    margin-right: 28px;
     margin-left: auto;
     padding-top: 28px;
     width: 70px;
     text-align: center;
   }
+  @media (--desktop) {
+    order: -1;
+    margin-right: 55px;
+  }
 }
+
+
+.product-week__inner {
+ @media (--tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+}
+.product-week__wrapper-text {
+  @media (--tablet) {
+    max-width: 310px;
+    width: 100%;
+  }
+  @media (--desktop) {
+    margin-left: 175px
+  }
+}
+
+
 .product-week__desc {
   margin-bottom: 30px;
   color: $grey-gravel;
 
   @media (--tablet) {
+    margin-bottom: 52px;
     font-size: 17px;
     line-height: 1.76;
+  }
+  @media (--desktop)  {
+    margin-bottom: 63px;
   }
 }
 .product-week__data-info {
   display: flex;
-  flex-basis: 350px;
   flex-wrap: wrap;
   margin-bottom: 20px;
   font-size: 15px;
@@ -62,6 +100,8 @@
 
   @media (--tablet) {
     margin-right: 10px;
+    margin-bottom: 187px;
+
   }
 }
 .product-week__data-name {
@@ -88,13 +128,18 @@
   margin-bottom: 20px;
 
   @media (--tablet) {
-    height: 404px;
+    margin: 0;
+    margin-top: 10px;
+    width: 333px;
+    height: 404px;/* временно */
   }
-
-
+  @media (--desktop) {
+    margin-top: -155px;
+    width: 525px;
+    height: 636px;
+  }
 }
-.product-week__price {
-  margin-bottom: 26px;
+.product-week__wrapper-order {
   color: $grey-gravel;
   text-align: center;
   font-weight: $font-bold;
@@ -102,14 +147,31 @@
   line-height: 1.41;
 
   @media (--tablet) {
+   margin-top: -140px;
+   width: 290px;
    font-size: 20px;
    line-height: 1.2;
  }
+ @media (--desktop) {
+  margin-left: 175px;
+}
+}
+.product-week__price {
+  display: block;
+  margin-bottom: 26px;
+
+  @media (--tablet) {
+    margin-bottom: 34px;
+    padding-left: 6px;
+  }
 }
 .product-week__order {
+  padding: 12px 0;
   font-size: 17px;
 
   @media (--tablet) {
-
+    padding: 14px 0 14px 6px;
   }
 }
+
+

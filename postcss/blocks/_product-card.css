@@ -6,6 +6,9 @@
   @media (--tablet) {
     flex-direction: row;
   }
+  @media (--desktop) {
+    flex-direction: column;
+  }
 }
 .product-card__inner {
   padding: 22px 27px 28px 28px;
@@ -23,6 +26,15 @@
   font-weight: $font-bold;
   font-size: 17px;
   line-height: 1.41;
+
+  @media (--tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  & a {
+    color: $color-black;
+  }
 }
 .product-card__desc {
   margin-bottom: 22px;
@@ -32,10 +44,21 @@
   font-size: 13px;
   line-height: 2.31;
 
-  @media (min-width: $tablet) {
+  @media (--tablet) {/*временный паддинг*/
     padding-bottom: 175px;
+    padding-bottom: 0;
+    font-size: 15px;
+    line-height: 2;
+  }
+  @media (--desktop) {
+    padding-bottom: 43px;
+
+    &--padding-for-border {
+      padding-bottom: 20px;
+    }
   }
 }
+
 .product-card__add-cart {
   display: flex;
   align-items: center;
@@ -46,6 +69,11 @@
   font-weight: $font-bold;
   font-size: 15px;
   line-height: 1.6;
+
+  @media (--tablet) {
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 .product-card__add-basket {
   font-size: 0;
