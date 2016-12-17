@@ -48,4 +48,9 @@ input::placeholder {
   font-size: 17px;
   line-height: 1.86;
   opacity: 0.3;
+
+    @media (--tablet) {
+      font-size: 19px;
+      line-height: 0.95;
+    }
 }

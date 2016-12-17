@@ -3,4 +3,16 @@
   color: $grey-gravel;
   font-size: 13px;
   line-height: 1.85;
+
+  @media (--tablet) {
+    margin-bottom: 75px;
+    font-size: 17px;
+    line-height: 1.76;
+  }
+  @media (--desktop) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 28px;
+    width: 700px;
+  }
 }

@@ -3,6 +3,10 @@
 
   @media (--tablet) {
     margin-bottom: 30px;
+
+    &--margin {
+      margin-bottom: 75px;
+    }
   }
   @media (--desktop) {
     margin-bottom: 115px;
