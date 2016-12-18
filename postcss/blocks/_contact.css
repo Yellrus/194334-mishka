@@ -1,3 +1,18 @@
+.contact__wrapper {
+  @media (--desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 50px;
+  }
+}
+.contact__inner-address {
+  @media (--desktop) {
+    margin-bottom: 65px;
+    padding-left: 120px;
+  }
+}
 .contact__title {
   position: relative;
   font-weight: $font-bold;
@@ -7,19 +22,28 @@
   @media (--tablet) {
     @mixin tablet-title;
 
-    margin-bottom: 37px;
+    margin-bottom: 35px;
+
+    @media (--desktop) {
+      align-self: center;
+      margin-top: -10px;
+    }
 
     &::after {
       position: absolute;
-      top: -12px;
-      right: 0;
+      top: -15px;
+      right: 3px;
       bottom: 0;
-      left: 93%;
       width: 47px;
       height: 82px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       content:'';
+
+      @media (--desktop) {
+        top: -10px;
+        left: -107px;
+      }
     }
   }
   @media (--desktop) {
@@ -39,13 +63,16 @@
     font-size: 17px;
     line-height: 1.76;
   }
+
 }
 .contact__data-info {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+  word-wrap: break-word;
 
-  @media (--tablet) {
-    justify-content: flex-start;
+  @media (--desktop) {
+    width: 298px;
   }
 }
 .contact__data-name {
@@ -53,10 +80,13 @@
   width: 77px;
 }
 .contact__data-value {
-  width: 145px;
+  width: 182px;
 
+  @media (--desktop) {
+    flex: 1;
+  }
   @media (--tablet) {
-    flex: 2;
+    width: 255px;
   }
 }
 .contact__data-indent {
@@ -86,17 +116,28 @@
     }
   }
 }
-.contact__map {
-  /*position: absolute;*/
-  margin-bottom: 30px;
+
+.contact__wrapper-btn {
+  @media (--desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -95px;
+    margin-left: 90px;
+    width: 400px;
+  }
 }
 .contact__btn {
   @media (--tablet) {
-    margin-right: auto;
-    margin-left: auto;
-    width: 34.5%;
+    margin-bottom: 57px;
+  }
+  @media (--desktop) {
+    padding-right: 34.5px;
+    padding-left: 34.5px;
+    width: auto;
   }
 }
+
 
 
 

@@ -5,41 +5,95 @@
   margin-bottom: 58px;
   padding-bottom: 4px;
   border: 1px solid $grey-snow;
+
+  @media (--desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .production-process__text {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 21px 29px 25px 18px;
+  order: -1;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding: 0 29px 0 18px;
 
   @media (--tablet) {
+    justify-content: flex-start;
     order: 1;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    padding: 0;
+  }
+  @media (--desktop) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
   }
 }
 .production-process__video {
   width: 100%;
   height: 100%;
 }
-.production-process__icon-video {
-  fill: $color-brand;
+.production-process__svg-video {
+  flex-shrink: 0;
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+
+  @media (--tablet) {
+    margin-right: 34px;
+  }
+
+  path {
+    fill: $color-brand;
+  }
 }
+
 .production-process__title {
-  width: 126px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-weight: $font-bold;
   font-size: 17px;
   line-height: 1.41;
 
   @media (--tablet) {
-    width: 83%;
+    width: auto;
     font-size: 20px;
     line-height: 1.2;
   }
+  @media (--desktop) {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
 }
+.production-process-indent {
+  @mixin pre-indent;
+
+  @media (--tablet) {
+   &:after {
+    content:"\a";
+    white-space: normal;
+  }
+}
+@media (--desktop) {
+  @mixin pre-indent;
+}
+}
+
 .production-process__inner {
   padding: 18px 34px 28px 34px;
 
   @media (--tablet) {
     order: 2;
+    padding: 12px 40px 40px 40px;
+  }
+  @media (--desktop) {
+    padding: 0;
+    width: 230px;
   }
 }
 .production-process__desc {
@@ -47,12 +101,26 @@
   color: $grey-gravel;
   font-size: 13px;
   line-height: 1.85;
+
+  @media (--tablet) {
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 2;
+  }
+  @media (--desktop) {
+    margin-bottom: 45px;
+  }
 }
 .production-process__video-holder {
   position: relative;
+  margin-bottom: 25px;
 
   @media (--tablet) {
     order: -1;
+    margin-bottom: 29px;
+  }
+  @media (--desktop) {
+    width: 682px;
   }
 }
 .production-process__play {
@@ -77,5 +145,13 @@
     }
   }
 }
-
-
+.production-process__wrapper-desc {
+  @media (--desktop) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    padding-left: 78px;
+    width: 367px;
+  }
+}

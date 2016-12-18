@@ -1,5 +1,16 @@
 .section-top {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
+
+  @media (--tablet) {
+    margin-bottom: 30px;
+
+    &--margin {
+      margin-bottom: 75px;
+    }
+  }
+  @media (--desktop) {
+    margin-bottom: 115px;
+  }
 }
 .section-top__title {
   padding: 71px 0 76px 0;
@@ -12,6 +23,9 @@
 
   @media (--tablet) {
     @mixin tablet-title;
+
+    margin-top: -59px;
+    padding: 98px 0 76px 0;
   }
   @media (--desktop) {
     @mixin desktop-title;
@@ -31,7 +45,6 @@
 
   @media (--tablet) {
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
   }
 }
@@ -85,7 +98,7 @@
   width: $container-mobile-width;
 
   @media (--tablet) {
-    padding: 32px 0 27px 29px;
+    padding: 29px 0 27px 34px;
     width: 334px;
   }
   @media (--desktop) {
@@ -97,7 +110,17 @@
   top: 23px;
   right: 35px;
 
+  @media (--tablet) {
+    top: 27px;
+    right: 36px;
+  }
+
   &--toy {
     right: 26px;
+
+    @media (--tablet) {
+      top: 32px;
+      right: 36px;
+    }
   }
 }

@@ -1,16 +1,34 @@
 .review {
-  padding-bottom: 30px; /*почему-то margin не работает */
+  display: block;
+  padding-bottom: 30px;
 }
 .review__author {
   display: block;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: $font-bold;
-  line-height: 1.33;
+  overflow: hidden;
   padding: 25px 0 6px 0;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-wrap: break-word;
+  font-weight: $font-bold;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+
+  @media (--tablet) {
+    display: block;
+    padding-top: 60px;
+    width: 450px;
+    font-size: 17px;
+    line-height: 1.41;
+  }
 }
 .review__contact {
+  color: $grey-gravel;
   font-size: 18px;
   line-height: 1.67;
-  color: $grey-gravel;
+
+  @media (--tablet) {
+    font-size: 17px;
+    line-height: 1.76;
+  }
 }

@@ -6,13 +6,18 @@
 }
 @media (--tablet) {
   .container {
+    padding: 0;
     width: 668px;
   }
 }
 
 @media (--desktop) {
   .container {
-    width: 1150px;
+    width: 1050px;
+
+    &--contact {
+      width: auto;
+    }
   }
 }
 
