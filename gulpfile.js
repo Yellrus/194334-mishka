@@ -47,7 +47,6 @@ gulp.task("style", function () {
     .pipe(gulp.dest("build/css"));
 });
 
-
 gulp.task("images", function () {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -62,14 +61,12 @@ gulp.task("images", function () {
 
 });
 
-
 gulp.task("svgimages", function () {
   return gulp.src("build/img/*.svg")
     .pipe(svgmin())
     .pipe(gulp.dest("build/img"));
 
 });
-
 
 gulp.task("jsmin", function () {
   gulp.src("js/mobile-menu.js")
@@ -99,12 +96,10 @@ gulp.task("serve", ["style"], function () {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-
 gulp.task("build", function (fn) {
   run("clean", "copy", "style", "images", "svgimages", "jsmin", fn)
 
 });
-
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -119,13 +114,11 @@ gulp.task("copy", function () {
 
 });
 
-
 gulp.task("copy:html", function () {
   return gulp.src("*html")
     .pipe(gulp.dest("build"));
 
 })
-
 
 gulp.task("clean", function () {
   return del("build");

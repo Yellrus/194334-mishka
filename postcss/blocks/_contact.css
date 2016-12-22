@@ -7,28 +7,22 @@
     padding: 0 50px;
   }
 }
+
 .contact__inner-address {
   @media (--desktop) {
     margin-bottom: 65px;
     padding-left: 120px;
   }
 }
+
 .contact__title {
   position: relative;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 1.67;
-
   @media (--tablet) {
     @mixin tablet-title;
-
     margin-bottom: 35px;
-
-    @media (--desktop) {
-      align-self: center;
-      margin-top: -10px;
-    }
-
     &::after {
       position: absolute;
       top: -15px;
@@ -38,8 +32,7 @@
       height: 82px;
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
-      content:'';
-
+      content: '';
       @media (--desktop) {
         top: -10px;
         left: -107px;
@@ -48,70 +41,73 @@
   }
   @media (--desktop) {
     @mixin desktop-title;
+    align-self: center;
+    margin-top: -10px;
   }
-
 }
+
 .contact__info {
   color: $grey-gravel;
   font-style: normal;
   font-size: 15px;
   line-height: 2;
-
   @media (--tablet) {
     margin-bottom: 65px;
     margin-left: 3px;
     font-size: 17px;
     line-height: 1.76;
   }
-
 }
+
 .contact__data-info {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   word-wrap: break-word;
-
   @media (--desktop) {
     width: 302px;
   }
 }
+
 .contact__data-name {
   margin-bottom: 15px;
   width: 77px;
 }
+
 .contact__data-value {
   width: 182px;
-
   @media (--desktop) {
-    /*flex: 1;   // в IE 11 не РАБОТАЕТ!*/
     width: 225px;
   }
   @media (--tablet) {
     width: 255px;
   }
 }
+
 .contact__data-indent {
   @mixin pre-indent;
-
   @media (--tablet) {
     @mixin pre-indent;
   }
 }
+
 .contact__data-name,
 .contact__data-value {
   margin-top: 13px;
 }
+
 .contact__data-value-link {
   padding-bottom: 3px;
   color: $grey-gravel;
-
   &--border {
     border-bottom: 1px solid $color-brand;
-
-    &:hover,:focus {
+    &:hover,
+     :focus {
+      transition: 0.2s;
       color: $color-brand;
     }
     &:active {
+      transition: 0.2s;
       color: $color-brand;
       opacity: 0.3;
     }
@@ -132,6 +128,7 @@
     width: 400px;
   }
 }
+
 .contact__btn {
   @media (--tablet) {
     margin-bottom: 57px;
@@ -143,7 +140,10 @@
   }
 }
 
-
-
-
-
+.contact__map {
+  @media (--desktop) {
+    position: relative;
+    width: 525px;
+    height: 457px;
+  }
+}

@@ -68,10 +68,10 @@ input::placeholder {
   font-weight: $font-normal;
   font-size: 17px;
   font-family: $main-font;
-  line-height: 1.86;
+  line-height: auto;
+  opacity: 1;
 
   @media (--tablet) {
     font-size: 19px;
-    line-height: 0.95;
   }
 }

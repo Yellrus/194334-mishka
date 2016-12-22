@@ -4,7 +4,6 @@
   flex-direction: column;
   margin-bottom: 58px;
   border: 1px solid $grey-snow;
-
   @media (--desktop) {
     /*flex-direction: row;
     flex-wrap: wrap;
@@ -12,8 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    height: 455px;
   }
-
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
@@ -33,7 +32,6 @@
   margin-right: auto;
   margin-bottom: 22px;
   padding: 24px 29px 0 35px;
-
   @media (--tablet) {
     justify-content: flex-start;
     order: 1;
@@ -62,11 +60,9 @@
   margin-right: 23px;
   width: 32px;
   height: 32px;
-
   @media (--tablet) {
     margin-right: 34px;
   }
-
   path {
     fill: $color-brand;
   }
@@ -79,7 +75,6 @@
   font-weight: $font-bold;
   font-size: 17px;
   line-height: 1.41;
-
   @media (--tablet) {
     width: auto;
     font-size: 20px;
@@ -93,7 +88,6 @@
 
 .production-process__indent {
   @mixin pre-indent;
-
   @media (--tablet) {
     &:after {
       content: "\a";
@@ -108,7 +102,6 @@
 .production-process__inner {
   order: 3;
   padding: 18px 34px 28px 34px;
-
   @media (--tablet) {
     order: 2;
     padding: 12px 40px 50px 40px;
@@ -122,6 +115,7 @@
     padding: 0;
     width: 225px;*/
     height: 150px;
+    flex-shrink: 1;
   }
 }
 
@@ -130,7 +124,6 @@
   color: $grey-gravel;
   font-size: 13px;
   line-height: 1.85;
-
   @media (--tablet) {
     margin-bottom: 35px;
     font-size: 15px;
@@ -145,14 +138,13 @@
   position: relative;
   order: 1;
   margin-bottom: 5px;
-
   @media (--tablet) {
     order: -1;
     margin-bottom: 29px;
     height: 455px;
   }
   @media (--desktop) {
-    order: 0;
+    order: -1;
     width: 682px;
   }
 }
@@ -168,26 +160,22 @@
   background: url("../img/video-mobile@1x.jpg") center/cover no-repeat;
   font-size: 0;
   cursor: pointer;
-
   @media (--retina) {
     background-image: url("../img/video-mobile@2x.jpg");
     background-size:
   }
   @media (--tablet) {
     background-image: url("../img/video-tablet@1x.jpg");
-
     @media (--retina) {
       background-image: url("../img/video-tablet@2x.jpg");
     }
   }
   @media (--desktop) {
     background-image: url("../img/video-desktop@1x.jpg");
-
     @media (--retina) {
       background-image: url("../img/video-desktop@2x.jpg");
     }
   }
-
   &::before {
     position: absolute;
     top: 0;

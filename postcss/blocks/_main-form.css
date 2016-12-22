@@ -251,6 +251,7 @@
 
   &::placeholder {
     color: $color-placeholder;
+    opacity: 1;
   }
   &:hover,
   &:focus {
