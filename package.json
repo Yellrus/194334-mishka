@@ -8,18 +8,26 @@
     "autoprefixer": "^6.5.3",
     "browser-sync": "2.18.2",
     "css-mqpacker": "^5.0.1",
+    "del": "^2.2.2",
     "gulp": "3.9.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.0.0",
     "postcss-assets": "^4.1.0",
     "postcss-inline-svg": "^2.3.0",
     "postcss-svg": "^1.0.6",
-    "precss": "1.4.0"
+    "precss": "1.4.0",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
@@ -31,5 +39,8 @@
   ],
   "engines": {
     "node": "6.7"
+  },
+  "dependencies": {
+    "del": "^2.2.2"
   }
 }
