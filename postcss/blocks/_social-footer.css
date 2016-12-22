@@ -4,18 +4,23 @@
   justify-content: center;
   border-bottom: 1px solid $grey-whites;
 
-    @media (--tablet) {
+  @media (--tablet) {
     width: 33.33%;
     border: none;
   }
+  @media (--tablet) {
+    padding-top: 10px;
+  }
 }
+
 .social-footer__item {
-  margin: 23px 20px 27px 20px;
+  padding: 23px 20px 27px 20px;
 
   &--instagram,
   &--facebook,
   &--twitter {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       path {
         fill: $color-svg;
       }

@@ -1,0 +1,25 @@
+.content-index__section-top {
+  margin-bottom: 30px;
+
+  @media (--tablet) {
+    margin-bottom: 8px;
+  }
+  @media (--desktop) {
+    margin-bottom: 93px;
+  }
+}
+
+.content-index__reviews {
+  margin-bottom: 20px;
+
+  @media (--tablet) {
+    margin-bottom: 60px;
+  }
+  @media (--desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.content-index__contact {
+  margin-bottom: 20px;
+}

@@ -5,7 +5,7 @@
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "6.5.3",
+    "autoprefixer": "^6.5.3",
     "browser-sync": "2.18.2",
     "css-mqpacker": "^5.0.1",
     "gulp": "3.9.1",

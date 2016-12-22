@@ -1,13 +1,17 @@
 .features {
-  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 20px;
 
   @media (--tablet) {
-    margin-bottom: 110px;
+    padding-top: 43px;
+    padding-bottom: 35px
   }
-  @media (--desktop) {
-
+    @media (--desktop) {
+    padding-top: 60px;
+    padding-bottom: 25px
   }
 }
+
 .features__title {
   margin-bottom: 30.5px;
   font-weight: $font-bold;
@@ -23,12 +27,14 @@
     @mixin desktop-title;
 
     margin-bottom: 50px;
-    padding-left: 192px;
+    padding-left: 170px;
   }
 }
+
 .features__list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0;
 
   @media (--tablet) {
     display: flex;
@@ -44,6 +50,7 @@
     width: 693px;
   }
 }
+
 .features__item {
   position: relative;
   overflow: hidden;
@@ -65,7 +72,7 @@
     }
 
     &--icon-flower {
-      order:-1;
+      order: -1;
     }
     &--icon-money {
       order: 2;
@@ -86,7 +93,7 @@
 
   &--icon-flower:after {
     position: absolute;
-    top:0;
+    top: 0;
     left: 7px;
     content: svg("img/icon-feature-1.svg", "[fill]: $color-brand");
   }
@@ -107,10 +114,8 @@
     top: 2px;
     left: -5px;
     content: svg("img/icon-feature-4.svg", "[fill]: $color-brand");
-
   }
   &--icon-gift {
     background: svg("img/icon-feature-6.svg", "[fill]: $color-brand") no-repeat;
   }
-
 }

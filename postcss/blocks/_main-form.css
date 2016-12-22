@@ -1,6 +1,7 @@
 .main-form {
   margin: 0;
 }
+
 .main-form__border {
   margin-bottom: 7px;
   padding: 0;
@@ -20,6 +21,7 @@
     margin-bottom: 16px;
   }
 }
+
 .main-form__legend {
   position: relative;
   display: block;
@@ -56,8 +58,8 @@
   &--contact-margin {
     margin-bottom: 8px;
   }
-
 }
+
 .main-form__value,
 .main-form__label-value {
   position: relative;
@@ -70,6 +72,7 @@
     line-height: 0.95;
   }
 }
+
 .main-form__value--name-margin {
   margin-right: 25px;
 
@@ -77,6 +80,7 @@
     margin-bottom: 45px;
   }
 }
+
 .main-form__list {
   margin: 0;
 }
@@ -87,6 +91,7 @@
   align-items: center;
   margin-bottom: 22px;
   word-wrap: break-word;
+  cursor: pointer;
 
   &--radio {
     align-items: flex-start;
@@ -94,8 +99,10 @@
   }
 }
 
+
 /* Radio */
-.main-form__input-radio:checked + .main-form__label-value::after {
+
+.main-form__input-radio:checked+.main-form__label-value::after {
   position: absolute;
   top: 2px;
   left: 12px;
@@ -104,7 +111,6 @@
   border-radius: 50%;
   background-color: $color-checked;
   content: "";
-  cursor: pointer;
 
   @media (--tablet) {
     top: 0;
@@ -131,16 +137,22 @@
     height: 52px;
   }
 }
+
 .main-form__label-value:hover::before {
   border: 2px solid $color-checked;
+  transition: 0.2s;
 }
+
 .main-form__label-value:active::before {
   border: 2px solid $grey-gravel;
   opacity: 0.3;
+  transition: 0.2s;
 }
 
+
 /* Checkbox */
-.main-form__input-checkbox:checked + .main-form__label-value::after {
+
+.main-form__input-checkbox:checked+.main-form__label-value::after {
   position: absolute;
   top: 12px;
   left: 8px;
@@ -158,6 +170,7 @@
     height: 22px;
   }
 }
+
 .main-form__label-value::before {
   flex-shrink: 0;
   margin-right: 23px;
@@ -174,11 +187,14 @@
   }
 }
 
+
 /* ФИО */
+
 .main-form__value {
   display: block;
   padding-top: 10px;
 }
+
 .main-form__name-enter {
   margin-bottom: 15px;
   padding-right: 45px;
@@ -186,7 +202,6 @@
   height: 50px;
   outline: none;
   border: none;
-  background: $color-white;
   background-color: transparent;
   box-shadow: inset 0 -2px 0 $color-black;
   white-space: initial;
@@ -196,9 +211,16 @@
     padding-right: 68px;
     padding-left: 15px;
   }
+  @media (--desktop) {
+    padding-left: 20px;
+    width: 700px;
+    height: 48px;
+  }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     box-shadow: inset 0 -2px 0 $color-checked;
+    transition: 0.2s;
   }
 }
 
@@ -223,15 +245,20 @@
     font-size: 19px;
     line-height: 0.95;
   }
+  @media (--desktop) {
+    width: 700px;
+  }
 
   &::placeholder {
     color: $color-placeholder;
-    opacity: 0.3;
   }
-  &:hover,&:focus {
+  &:hover,
+  &:focus {
     border: 2px solid $color-checked;
+    transition: 0.2s;
   }
 }
+
 .main-form__rule {
   margin-bottom: 35px;
   color: $grey-gravel;
@@ -245,6 +272,7 @@
     line-height: 1.76;
   }
 }
+
 .main-form__btn {
   margin-bottom: 50px;
   padding: 14px 0;
@@ -257,12 +285,14 @@
     padding-left: 25px;
   }
 }
-.main-form__name-enter:focus + .main-form__input-icon {
+
+.main-form__name-enter:focus+.main-form__input-icon {
   path {
     fill: $color-checked;
     fill-opacity: 1;
   }
 }
+
 .main-form__input-icon {
   position: absolute;
   top: 9px;
@@ -272,7 +302,9 @@
   @media (--tablet) {
     top: 7px;
     right: 23px;
-
+  }
+  @media (--desktop) {
+    right: 59px;
   }
 
   &--phone {
@@ -285,21 +317,12 @@
     }
   }
 }
-.main-form__visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-}
 
 
 /* планшет и десктоп */
+
 .main-form__legend-flex {
-  @media (--tablet)  {
+  @media (--tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -310,9 +333,10 @@
   }
   @media (--desktop) {
     justify-content: space-around;
-    width: 1050px;
+    width: 1047px;
   }
 }
+
 .main-form__bg-color {
   @media (--tablet) {
     margin-right: calc(-100vw / 2 + 668px / 2);
@@ -330,10 +354,15 @@
     }
   }
   @media (--desktop) {
-    margin-right: calc(-100vw / 2 + 1050px / 2);
-    margin-left: calc(-100vw / 2 + 1050px / 2);
+    margin-right: calc(-100vw / 2+1050px / 2);
+    margin-left: calc(-100vw / 2+1050px / 2);
+
+    &--margin {
+      margin-bottom: 35px;
+    }
   }
 }
+
 .main-form__wrapper-label {
   position: relative;
 
@@ -355,23 +384,30 @@
   path {
     fill-opacity: 0.2;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     path {
+      transition: 0.2s;
       fill: $color-checked;
       fill-opacity: 1;
     }
   }
-
 }
 
-.main-form__name-enter {
-  &:hover, &:focus {
+
+/*.main-form__name-enter {
+  &:hover,
+  &:focus {
     box-shadow: inset 0 -2px 0 $color-checked;
+    transition: 0.2s;
   }
+   @media (--desktop) {
+     padding-left: 25px;
+   }
+}*/
 
-}
 .main-form__inner-legend {
-  @media (--tablet)  {
+  @media (--tablet) {
     &--align-type {
       align-self: flex-start;
     }
@@ -387,8 +423,8 @@
       padding-left: 32px;
     }
   }
-
 }
+
 .main-form__inner-label {
   @media (--tablet) {
     width: 238px;
@@ -405,33 +441,29 @@
     }
   }
 }
+
 .main-form__inner-full-name {
   @media (--tablet) {
     display: flex;
     align-items: baseline;
     width: 100%;
   }
+  @media (--tablet) {
+    width: 700px;
+  }
 }
+
 .main-form__wrapper-btn {
- @media (--tablet)  {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 55px;
+  @media (--tablet) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+  @media (--desktop) {
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    width: 700px;
+  }
 }
-@media (--desktop) {
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
-  width: 700px;
-}
-}
-
-
-
-
-
-
-
-
-

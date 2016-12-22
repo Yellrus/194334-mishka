@@ -1,0 +1,9 @@
+.content-catalog__section-top {
+  margin-bottom: 26px;
+  @media (--tablet) {
+  margin-bottom: 60px;
+  }
+  @media (--desktop) {
+  margin-bottom: 115px;
+  }
+}
