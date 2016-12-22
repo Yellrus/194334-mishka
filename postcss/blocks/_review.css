@@ -2,6 +2,7 @@
   display: block;
   padding-bottom: 30px;
 }
+
 .review__author {
   display: block;
   overflow: hidden;
@@ -21,7 +22,11 @@
     font-size: 17px;
     line-height: 1.41;
   }
+  @media (--desktop) {
+    padding-top: 40px;
+  }
 }
+
 .review__contact {
   color: $grey-gravel;
   font-size: 18px;

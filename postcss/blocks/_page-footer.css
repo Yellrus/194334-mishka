@@ -3,7 +3,7 @@
   flex-grow: 1;
   flex-direction: column;
   margin-top: 40px;
-  padding-bottom: 11px ;
+  padding-bottom: 11px;
   background-color: $bg-color;
   font-weight: $font-bold;
   font-size: 19px;
@@ -26,26 +26,38 @@
     padding-right: 21px;
     width: 33.33%;
   }
+  @media (--desktop) {
+    padding-top: 10px;
+    padding-left: 125px;
+    width: 33.33%;
+  }
 
   path {
     fill: $color-brand;
-
-    &:hover, &:focus {
+  }
+  &:hover,
+  &:focus {
+    path {
+      transition: 0.2s;
       fill: $color-svg;
     }
   }
   &:active {
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
+
 .page-footer__icon-htmlacademy {
   margin-left: 22px;
   width: 40px;
   height: 40px;
 }
+
 .page-footer__font-hidden {
   font-size: 0;
 }
+
 .page-footer__logo {
   display: none;
 
@@ -56,19 +68,25 @@
     width: 33.33%;
     text-align: center;
   }
+  @media (--desktop) {
+    padding-top: 5px;
+    padding-right: 170px;
+  }
 }
+
 .page-footer__logo-icon {
   width: 102px;
   height: 83px;
-  cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     path {
+      transition: 0.2s;
       fill: $color-svg;
     }
   }
   &:active path {
     opacity: 0.3;
+    transition: 0.2s;
   }
 }
-

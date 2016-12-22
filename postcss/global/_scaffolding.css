@@ -1,10 +1,15 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-html, body {
+
+html,
+body {
   background-color: $color-white;
   color: $color-black;
   font-weight: $font-normal;
@@ -12,10 +17,12 @@ html, body {
   font-family: $main-font;
   line-height: 1.6;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 h1,
 h2,
 h3,
@@ -23,18 +30,32 @@ h4,
 dd,
 dt,
 button,
-p  {
+p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 ul {
   margin-left: 0;
   padding-left: 0;
+}
+
+input,
+textarea {
+  font-weight: $font-normal;
+  font-size: 17px;
+  font-family: $main-font;
+
+  @media (--tablet) {
+    font-size: 19px;
+  }
 }
 
 input[type=radio],
@@ -42,15 +63,15 @@ input[type=checkbox] {
   display: none;
 }
 
-
 input::placeholder {
   color: $color-placeholder;
+  font-weight: $font-normal;
   font-size: 17px;
+  font-family: $main-font;
   line-height: 1.86;
-  opacity: 0.3;
 
-    @media (--tablet) {
-      font-size: 19px;
-      line-height: 0.95;
-    }
+  @media (--tablet) {
+    font-size: 19px;
+    line-height: 0.95;
+  }
 }

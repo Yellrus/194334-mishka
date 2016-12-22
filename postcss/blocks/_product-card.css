@@ -1,7 +1,7 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  border:  1px solid $grey-snow;
+  border: 1px solid $grey-snow;
 
   @media (--tablet) {
     flex-direction: row;
@@ -10,17 +10,32 @@
     flex-direction: column;
   }
 }
-.product-card__inner {
-  padding: 22px 27px 28px 28px;
-  width: 100%;
 
-  &:hover,&:focus {
+.product-card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 27px 22px 28px;
+
+  @media (--tablet) {
+    width: 334px;
+  }
+  @media (--desktop) {
+    padding-bottom: 22px;
+    width: 316px;
+  }
+
+  &:hover,
+  &:focus {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
   }
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
   }
 }
+
 .product-card__title {
   margin-bottom: 7px;
   font-weight: $font-bold;
@@ -36,25 +51,22 @@
     color: $color-black;
   }
 }
+
 .product-card__desc {
   margin-bottom: 22px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid $grey-snow;
   color: $grey-gravel;
   font-size: 13px;
   line-height: 2.31;
 
-  @media (--tablet) {/*временный паддинг*/
-    padding-bottom: 175px;
-    padding-bottom: 0;
+  @media (--tablet) {
     font-size: 15px;
     line-height: 2;
   }
   @media (--desktop) {
-    padding-bottom: 43px;
+    margin-bottom: 40px;
 
     &--padding-for-border {
-      padding-bottom: 20px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -62,7 +74,11 @@
 .product-card__add-cart {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  /*padding-bottom: 22px;*/
+  border-top: 1px solid $grey-snow;
 }
+
 .product-card__price {
   display: block;
   width: 100%;
@@ -75,23 +91,43 @@
     line-height: 1.41;
   }
 }
+
 .product-card__add-basket {
+  padding: 10px 0 10px 35px;
   font-size: 0;
 
   path {
     fill-opacity: 0.2;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     path {
+      transition: 0.2s;
       fill: $color-brand;
       fill-opacity: 1;
     }
   }
   &:active {
     path {
+      transition: 0.2s;
       fill: $color-brand;
       fill-opacity: 0.3;
     }
   }
 }
 
+.product-card__wrapper-img {
+  width: 260px;
+  height: 195px;
+  background-color: #efefef;
+  line-height: 0;
+
+  @media (--tablet) {
+    width: 334px;
+    height: 334px;
+  }
+  @media (--desktop) {
+    width: 316px;
+    height: 463px;
+  }
+}

@@ -1,21 +1,70 @@
 .section-top {
-  margin-bottom: 26px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $bg-color;
+  background-size: cover;
+  border-top: 1px solid $grey-snow;
 
   @media (--tablet) {
-    margin-bottom: 30px;
+    margin-top: -59px;
 
-    &--margin {
-      margin-bottom: 75px;
+    &--padding-for-decor {
+      padding-bottom: 17px;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: center;
+      background-size: auto 100%;
+      background-repeat: repeat-x;
+      content: "";
     }
   }
   @media (--desktop) {
-    margin-bottom: 115px;
+    &--padding-for-decor {
+      padding-bottom: 11px;
+    }
+  }
+
+  &--bg-image {
+    background-color: #fbfbfb;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-position: center -17px;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+
+    @media (--retina) {
+      background-color: #fbfbfb;
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+      background-repeat: no-repeat;
+    }
+    @media (--tablet) {
+      background-color: #fbfbfb;
+      background-image: url("../img/hero-desktop@1x.jpg");
+      background-position: center top;
+
+      @media (--retina) {
+        background-color: #fbfbfb;
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-position: center top;
+        background-size: 1150px auto;
+      }
+    }
   }
 }
+
 .section-top__title {
-  padding: 71px 0 76px 0;
-  background-color: $bg-color;
-  background-size: cover;
+  padding-top: 68px;
+  padding-right: 30px;
+  padding-bottom: 85px;
+  padding-left: 30px;
+  width: 100%;
   text-align: center;
   font-weight: $font-bold;
   font-size: 27px;
@@ -23,33 +72,48 @@
 
   @media (--tablet) {
     @mixin tablet-title;
-
-    margin-top: -59px;
-    padding: 98px 0 76px 0;
+    padding-bottom: 105px;
+    padding-top: 88px;
+    &--margin-for-main-page {
+      padding-top: 153px;
+      padding-bottom: 373px;
+    }
   }
   @media (--desktop) {
     @mixin desktop-title;
+    padding-bottom: 120px;
+    &--margin-for-main-page {
+      padding-top: 153px;
+      padding-bottom: 360px;
+    }
   }
 
-  &--bg {
-    padding: 72px 12px 123px 12px;
-    background: url("../img/hero-mobile@1x.jpg");
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
+  &--margin-for-main-page {
+    padding-top: 72px;
+    padding-bottom: 123px;
   }
 }
+
 .section-top__items {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: -5px;
+  padding-top: 5px;
+  width: 100%;
 
   @media (--tablet) {
     flex-direction: row;
     justify-content: center;
   }
 }
+
 .section-top__item {
   position: relative;
+  margin-bottom: -5px;
+  padding-bottom: 5px;
   background-color: $color-brand;
   background-repeat: no-repeat;
   color: $color-white;
@@ -59,42 +123,51 @@
 
   @media (--tablet) {
     font-size: 20px;
-    line-height: 1.5
+    line-height: 1.5;
   }
 
   &:nth-child(even) {
     background-color: $color-sub-brand;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $color-hover-sub-brand;
+      transition: 0.2s;
     }
   }
   path {
     fill: #149080;
     fill-opacity: 0.5;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $color-hover-brand;
+    transition: 0.2s;
+    transform: translateY(-5px);
 
     path {
+      transition: 0.2s;
       fill-opacity: 0.7;
     }
   }
   &:active {
     color: rgba(256, 256, 256, 0.3);
+    transition: 0.2s;
 
     path {
+      transition: 0.2s;
       fill-opacity: 0.3;
     }
   }
 }
 
-.section-top__inner-items {
+.section-top__item-inner {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
-  padding: 30px 0 27px 29px;
+  padding: 23px 0 12px 29px;
   width: $container-mobile-width;
 
   @media (--tablet) {
@@ -105,22 +178,9 @@
     width: 525px;
   }
 }
-.section-top__item-icon {
-  position: absolute;
-  top: 23px;
-  right: 35px;
 
-  @media (--tablet) {
-    top: 27px;
-    right: 36px;
-  }
-
-  &--toy {
-    right: 26px;
-
-    @media (--tablet) {
-      top: 32px;
-      right: 36px;
-    }
-  }
+.section-top__icon-inner {
+  margin-right: 7px;
+  width: 100px;
+  text-align: center;
 }

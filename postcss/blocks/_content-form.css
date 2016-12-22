@@ -1,0 +1,9 @@
+.content-form__section-top {
+  margin-bottom: 18px;
+  @media (--tablet) {
+  margin-bottom: 52px;
+  }
+  @media (--desktop) {
+  margin-bottom: 80px;
+  }
+}

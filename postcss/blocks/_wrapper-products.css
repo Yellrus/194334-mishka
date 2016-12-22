@@ -1,13 +1,18 @@
 .wrapper-products__item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
-      @media (--desktop) {
-    }
+  @media (--tablet) {
+    margin-bottom: 52px;
+  }
+  @media (--desktop) {
+    margin-bottom: 55px;
+  }
 }
 
 .wrapper-products {
-    @media (--desktop) {
-      display: flex;
-      justify-content: space-between;
-    }
+  @media (--desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

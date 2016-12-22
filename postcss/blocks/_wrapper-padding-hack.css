@@ -10,9 +10,20 @@
   @media (--desktop) {
     padding: 0;
   }
+@media (--tablet) {
+   margin-bottom: 50px;
+}
 
 }
-.wrapper-padding-hack iframe {
+#google-map {
+ @media (--desktop) {
+    position: relative;
+    width: 525px;
+    height: 457px;
+
+  }
+}
+/*.wrapper-padding-hack  {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,4 +37,4 @@
 
   }
 }
-
+*/

@@ -45,7 +45,7 @@ $button-border: $grey-snow;
 $bg-color: $grey-whitesmoke;
 
 /*--------- Form --------- */
-$color-placeholder: $grey-gravel;
+$color-placeholder: rgba(68,68,68,0.3);
 
 /*--------- Mobile container --------- */
 $container-mobile-width: 320px;
@@ -53,3 +53,6 @@ $container-mobile-width: 320px;
 /*--------- Media Queries --------- */
 @custom-media --tablet (width >= 768px);
 @custom-media --desktop (width >= 1150px);
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
+@custom-media --mobile-widths-only (width <= 767px);
+

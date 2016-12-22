@@ -7,6 +7,9 @@
 
 /* Block */
 @import "blocks/_btn.css";
+@import "blocks/_content-index.css";
+@import "blocks/_content-catalog.css";
+@import "blocks/_content-form.css";
 @import "blocks/_page-header.css";
 @import "blocks/_section-top.css";
 @import "blocks/_content.css";

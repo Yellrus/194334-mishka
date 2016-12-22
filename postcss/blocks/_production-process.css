@@ -3,22 +3,36 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 58px;
-  padding-bottom: 4px;
   border: 1px solid $grey-snow;
 
   @media (--desktop) {
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
   }
 }
+
 .production-process__text {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  order: -1;
+  justify-content: center;
+  order: -2;
   margin-right: auto;
-  margin-bottom: 25px;
-  padding: 0 29px 0 18px;
+  margin-bottom: 22px;
+  padding: 24px 29px 0 35px;
 
   @media (--tablet) {
     justify-content: flex-start;
@@ -30,16 +44,22 @@
   @media (--desktop) {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 0;
+    /* align-self: baseline;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    margin-left: 80px;*/
+    order: 0
   }
 }
+
 .production-process__video {
   width: 100%;
   height: 100%;
 }
+
 .production-process__svg-video {
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 23px;
   width: 32px;
   height: 32px;
 
@@ -70,32 +90,41 @@
     margin-bottom: 15px;
   }
 }
-.production-process-indent {
+
+.production-process__indent {
   @mixin pre-indent;
 
   @media (--tablet) {
-   &:after {
-    content:"\a";
-    white-space: normal;
+    &:after {
+      content: "\a";
+      white-space: normal;
+    }
   }
-}
-@media (--desktop) {
-  @mixin pre-indent;
-}
+  @media (--desktop) {
+    @mixin pre-indent;
+  }
 }
 
 .production-process__inner {
+  order: 3;
   padding: 18px 34px 28px 34px;
 
   @media (--tablet) {
     order: 2;
-    padding: 12px 40px 40px 40px;
+    padding: 12px 40px 50px 40px;
   }
   @media (--desktop) {
+    order: 0;
+    /*justify-content: space-between;
+    margin-top: -300px;
+    margin-right: 75px;
+    margin-left: auto;
     padding: 0;
-    width: 230px;
+    width: 225px;*/
+    height: 150px;
   }
 }
+
 .production-process__desc {
   margin-bottom: 28px;
   color: $grey-gravel;
@@ -111,18 +140,23 @@
     margin-bottom: 45px;
   }
 }
+
 .production-process__video-holder {
   position: relative;
-  margin-bottom: 25px;
+  order: 1;
+  margin-bottom: 5px;
 
   @media (--tablet) {
     order: -1;
     margin-bottom: 29px;
+    height: 455px;
   }
   @media (--desktop) {
+    order: 0;
     width: 682px;
   }
 }
+
 .production-process__play {
   position: absolute;
   top: 0;
@@ -131,27 +165,72 @@
   height: 100%;
   outline: none;
   border: none;
-  background: url("../img/icon-play.svg") 50% 50% no-repeat;
+  background: url("../img/video-mobile@1x.jpg") center/cover no-repeat;
   font-size: 0;
-  transition: 0.3s;
+  cursor: pointer;
 
-  &:hover, &:focus {
-    cursor: pointer;
-    transform: scale(1.2);
+  @media (--retina) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size:
+  }
+  @media (--tablet) {
+    background-image: url("../img/video-tablet@1x.jpg");
 
-    &:active {
-      opacity: 0.3;
-      transform: scale(0.8);
+    @media (--retina) {
+      background-image: url("../img/video-tablet@2x.jpg");
     }
   }
+  @media (--desktop) {
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (--retina) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/icon-play.svg") 50% 50% no-repeat;
+    content: '';
+  }
+  &:hover,
+  &:focus {
+    &::before {
+      transition: 0.2s;
+      transform: scale(1.2);
+    }
+    ;
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+      transition: 0.2s;
+      transform: scale(0.8);
+    }
+    ;
+  }
 }
-.production-process__wrapper-desc {
+
+
+/*.production-process__wrapper-desc {
   @media (--desktop) {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 55px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 78px;
     width: 367px;
   }
-}
+   &:hover, &:focus {
+    transition: 0.2s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    transition: 0.2s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}*/

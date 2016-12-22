@@ -10,10 +10,12 @@
   font-size: 18px;
 
   &:hover, :focus {
+    transition: 0.2s;
     background-color: $grey-gravel;
     color: $color-white;
   }
   &:active {
+    transition: 0.2s;
     color: $grey-dark;
   }
 }

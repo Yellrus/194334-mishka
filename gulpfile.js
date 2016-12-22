@@ -17,14 +17,16 @@ gulp.task("style", function() {
   .pipe(postcss([
     precss(),
     autoprefixer({browsers: [
-      "last 2 versions"
+      "last 2 versions", "IE 11"
       ]}),
     assets({
      loadPaths: ["img/"]
    }),
     inlinesvg("options.encode(svg)"),
     postcssSVG({ defaults: '[fill]: black' }),
-    cssmqpacker()
+    cssmqpacker({
+      sort: false
+    })
     ]))
   .pipe(gulp.dest("css"))
   .pipe(server.stream());
