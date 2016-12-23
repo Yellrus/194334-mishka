@@ -17,7 +17,6 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
-var copy = require('gulp-copy');
 
 gulp.task("style", function () {
   gulp.src("postcss/style.css")

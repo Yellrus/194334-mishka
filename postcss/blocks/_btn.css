@@ -9,13 +9,14 @@
   font-weight: $font-bold;
   font-size: 18px;
 
-  &:hover, :focus {
-    transition: 0.2s;
+  &:hover,
+   :focus {
     background-color: $grey-gravel;
     color: $color-white;
+    transition: 0.2s;
   }
   &:active {
-    transition: 0.2s;
     color: $grey-dark;
+    transition: 0.2s;
   }
 }

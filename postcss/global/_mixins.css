@@ -1,17 +1,21 @@
 /* Заголовки */
+
 @define-mixin desktop-title {
   font-size: 53px;
   line-height: 1.08;
 }
+
 @define-mixin tablet-title {
   font-size: 43px;
   line-height: 1.16;
 }
+
+
 /* Отступ у текста */
+
 @define-mixin pre-indent {
   &:after {
-    content:"\a";
+    content: "\a";
     white-space: pre-line;
   }
 }
-

@@ -4,7 +4,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 auto;
     padding: 0 50px;
+    width: 1150px;
   }
 }
 
@@ -20,9 +22,12 @@
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 1.67;
+
   @media (--tablet) {
     @mixin tablet-title;
+
     margin-bottom: 35px;
+
     &::after {
       position: absolute;
       top: -15px;
@@ -33,6 +38,7 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       content: '';
+
       @media (--desktop) {
         top: -10px;
         left: -107px;
@@ -41,6 +47,7 @@
   }
   @media (--desktop) {
     @mixin desktop-title;
+
     align-self: center;
     margin-top: -10px;
   }
@@ -51,6 +58,7 @@
   font-style: normal;
   font-size: 15px;
   line-height: 2;
+
   @media (--tablet) {
     margin-bottom: 65px;
     margin-left: 3px;
@@ -64,6 +72,7 @@
   flex-wrap: wrap;
   overflow: hidden;
   word-wrap: break-word;
+
   @media (--desktop) {
     width: 302px;
   }
@@ -76,6 +85,7 @@
 
 .contact__data-value {
   width: 182px;
+
   @media (--desktop) {
     width: 225px;
   }
@@ -86,6 +96,7 @@
 
 .contact__data-indent {
   @mixin pre-indent;
+
   @media (--tablet) {
     @mixin pre-indent;
   }
@@ -99,17 +110,19 @@
 .contact__data-value-link {
   padding-bottom: 3px;
   color: $grey-gravel;
+
   &--border {
     border-bottom: 1px solid $color-brand;
+
     &:hover,
      :focus {
-      transition: 0.2s;
       color: $color-brand;
+      transition: 0.2s;
     }
     &:active {
-      transition: 0.2s;
       color: $color-brand;
       opacity: 0.3;
+      transition: 0.2s;
     }
   }
 }

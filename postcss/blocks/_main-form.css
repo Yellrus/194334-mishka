@@ -355,8 +355,8 @@
     }
   }
   @media (--desktop) {
-    margin-right: calc(-100vw / 2+1050px / 2);
-    margin-left: calc(-100vw / 2+1050px / 2);
+    margin-right: calc(-100vw / 2 + 1050px / 2);
+    margin-left: calc(-100vw / 2 + 1050px / 2);
 
     &--margin {
       margin-bottom: 35px;

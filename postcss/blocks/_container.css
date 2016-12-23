@@ -4,6 +4,7 @@
   padding: 0 30px;
   width: $container-mobile-width;
 }
+
 @media (--tablet) {
   .container {
     padding: 0;
@@ -20,6 +21,3 @@
     }
   }
 }
-
-
-

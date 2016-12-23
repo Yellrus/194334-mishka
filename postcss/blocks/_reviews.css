@@ -20,7 +20,11 @@
   }
   @media (--desktop) {
     padding-bottom: 150px;
-    background-position: 5% top;
+    background-position: calc(50% - 350px) top;
+
+    @media (--retina) {
+      background-position: calc(50% - 350px) top;
+    }
   }
 }
 

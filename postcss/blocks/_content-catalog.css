@@ -1,9 +1,21 @@
 .content-catalog__section-top {
   margin-bottom: 26px;
+
   @media (--tablet) {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
   }
   @media (--desktop) {
-  margin-bottom: 115px;
+    margin-bottom: 115px;
+  }
+}
+
+.content-catalog__production-process {
+  margin-bottom: 58px;
+
+  @media (--tablet) {
+    margin-bottom: 58px;
+  }
+  @media (--desktop) {
+    margin-bottom: 100px;
   }
 }
