@@ -1,10 +1,23 @@
 .content-form__section-top {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (--tablet) {
-    margin-bottom: 52px;
+    margin-bottom: 60px;
   }
   @media (--desktop) {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
+  }
+}
+
+.content-form__form-desc {
+  margin-bottom: 26px;
+
+  @media (--tablet) {
+    margin-bottom: 75px;
+  }
+  @media (--desktop) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 28px;
   }
 }

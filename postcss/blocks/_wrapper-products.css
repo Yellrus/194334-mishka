@@ -1,5 +1,5 @@
 .wrapper-products__item {
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
   @media (--tablet) {
     margin-bottom: 52px;

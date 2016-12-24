@@ -95,6 +95,7 @@
     position: absolute;
     top: 0;
     left: 7px;
+    display: block;
     content: svg("img/icon-feature-1.svg", "[fill]: $color-brand");
   }
   &--icon-money {
@@ -104,6 +105,7 @@
     position: absolute;
     top: 4px;
     left: 7px;
+    display: block;
     content: svg("img/icon-feature-5.svg", "[fill]: $color-brand");
   }
   &--icon-ball {
@@ -113,6 +115,7 @@
     position: absolute;
     top: 2px;
     left: -5px;
+    display: block;
     content: svg("img/icon-feature-4.svg", "[fill]: $color-brand");
   }
   &--icon-gift {

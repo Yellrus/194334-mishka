@@ -2,10 +2,10 @@
   margin-bottom: 26px;
 
   @media (--tablet) {
-    margin-bottom: 60px;
+    margin-bottom: 68px;
   }
   @media (--desktop) {
-    margin-bottom: 115px;
+    margin-bottom: 110px;
   }
 }
 

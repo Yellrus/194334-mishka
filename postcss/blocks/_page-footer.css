@@ -31,16 +31,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px auto;
+  margin: 18px auto;
+  padding-top: 4px;
+  padding-left: 10px;
   color: $color-black;
 
   @media (--tablet) {
     margin: 0;
     padding-right: 21px;
+    padding-bottom: 8px;
+    padding-left: 0;
     width: 33.33%;
   }
   @media (--desktop) {
-    padding-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 125px;
     width: 33.33%;
   }
@@ -82,8 +87,8 @@
     text-align: center;
   }
   @media (--desktop) {
-    padding-top: 5px;
-    padding-right: 170px;
+    padding-top: 4px;
+    padding-right: 180px;
   }
 }
 

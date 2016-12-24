@@ -82,7 +82,7 @@
   }
   @media (--desktop) {
     order: -3;
-    width: 35%;
+    width: 34%;
   }
 }
 
@@ -105,47 +105,49 @@
       box-shadow: none;
     }
     &--search {
-      width: 82px;
+      width: 84px;
       border-right: 1px solid #ececec;
       border-left: 1px solid #ececec;
       font-size: 0;
     }
     &--basket {
-      padding: 34px 0 31px 83px;
+      padding: 32px 0 31px 84px;
     }
     &--nav {
-      padding: 18px 0;
-      padding-left: 47px;
+      padding: 20px 0;
       font-size: 15px;
       line-height: 1.6;
-
-      @media (--desktop) {
-        padding: 30px 0 30px 0;
-        text-align: center;
-        font-size: 17px;
-        line-height: 1.41;
-      }
     }
     &--catalog {
-      @media (--desktop) {
-        padding-right: 35px;
-        padding-left: 12px;
-        border-right: 1px solid #ececec;
-      }
+      padding-left: 50px;
     }
     &--order {
-      @media (--desktop) {
-        padding-right: 20px;
-        padding-left: 30px;
-      }
+      padding-left: 36px;
+    }
+  }
+  @media (--desktop) {
+    &--nav {
+      padding: 30px 0 30px 0;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.41;
+    }
+    &--catalog {
+      padding-right: 35px;
+      padding-left: 15px;
+      border-right: 1px solid #ececec;
+    }
+    &--order {
+      padding-left: 35px;
     }
     &--new,
     &--sale {
-      @media (--desktop) {
-        margin-left: 54px;
-        font-size: 15px;
-        line-height: 1.6;
-      }
+      padding-left: 51px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    &--sale {
+      padding-left: 61px;
     }
   }
 
@@ -220,7 +222,8 @@
     justify-content: flex-start;
     order: -2;
     margin: 0;
-    padding-left: 50px;
+    padding-bottom: 8px;
+    padding-left: 48px;
 
     img {
       width: 113px;
@@ -229,6 +232,7 @@
   }
   @media (--desktop) {
     padding: 0;
+    padding-top: 10px;
     padding-right: 15px;
 
     img {

@@ -14,7 +14,7 @@
     @media (--retina) {
       background: url("../img/review@2x.jpg");
       background-position: top left;
-      background-size: 350px 450px;
+      background-size: 350px 460px;
       background-repeat: no-repeat;
     }
   }

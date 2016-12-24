@@ -16,6 +16,10 @@
 .social-footer__item {
   padding: 23px 20px 27px 20px;
 
+  @media (--tablet) {
+    padding: 15px 22px 25px 18px;
+  }
+
   &--instagram,
   &--facebook,
   &--twitter {

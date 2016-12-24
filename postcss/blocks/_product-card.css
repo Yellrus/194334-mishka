@@ -15,13 +15,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 22px 27px 22px 28px;
+  padding: 25px 27px 20px 28px;
 
   @media (--tablet) {
+    padding: 22px 27px 22px 28px;
     width: 334px;
   }
   @media (--desktop) {
-    padding-bottom: 22px;
+    padding: 25px 33px 22px 28px;
     width: 316px;
   }
 
@@ -45,6 +46,9 @@
   @media (--tablet) {
     font-size: 20px;
     line-height: 1.2;
+  }
+  @media (--desktop) {
+    margin-bottom: 6px;
   }
 
   & a {
