@@ -1,6 +1,7 @@
 function initMap() {
   var map = new google.maps.Map(document.getElementById('google-map'), {
     zoom: 16,
+    scrollwheel: false,
     center: {lat: 59.9387942, lng: 30.3230833}
   });
 
@@ -14,7 +15,7 @@ var points = [
 function setMarkers(map) {
   var image = {
     url: 'img/icon-map-pin.svg',
-    size: new google.maps.Size(66, 101),
+    scaledSize: new google.maps.Size(66, 101),
     anchor: new google.maps.Point(33, 90)
   };
 
@@ -23,6 +24,7 @@ function setMarkers(map) {
     var marker = new google.maps.Marker({
       position: {lat: point[1], lng: point[2]},
       map: map,
+      optimized: false,
       icon: image,
       title: point[0]
     });
