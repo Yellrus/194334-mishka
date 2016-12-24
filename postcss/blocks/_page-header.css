@@ -17,15 +17,14 @@
   &--close {
     .page-header__hamburger {
       position: absolute;
-      top: 12px;
-      right: 15px;
-      padding: 25px;
       width: 21px;
       height: 21px;
       outline: none;
       border: none;
-      background: url("../img/icon-menu-open.svg") no-repeat;
+      background-color: transparent;
+      background-image: url("../img/icon-menu-open.svg");
       background-position: center;
+      background-repeat: no-repeat;
       font-size: 0;
       cursor: pointer;
       transition: 0.2s;
@@ -38,15 +37,14 @@
   &--opened {
     .page-header__hamburger {
       position: absolute;
-      top: 12px;
-      right: 15px;
-      padding: 25px;
       width: 21px;
       height: 20px;
       outline: none;
       border: none;
-      background: url("../img/icon-menu-close.svg") no-repeat;
+      background-color: transparent;
+      background-image: url("../img/icon-menu-close.svg");
       background-position: center;
+      background-repeat: no-repeat;
       font-size: 0;
       cursor: pointer;
       transition: 0.2s;
@@ -56,15 +54,17 @@
 
 .page-header__hamburger {
   position: absolute;
-  top: 12px;
-  right: 15px;
+  top: 14px;
+  right: 16px;
   padding: 25px;
   width: 21px;
   height: 21px;
   outline: none;
   border: none;
-  background: url("../img/icon-menu-open.svg") no-repeat;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-open.svg");
   background-position: center;
+  background-repeat: no-repeat;
   font-size: 0;
   cursor: pointer;
 
