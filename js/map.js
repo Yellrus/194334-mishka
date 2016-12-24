@@ -5,7 +5,7 @@ function initMap() {
       lat: 59.9387942,
       lng: 30.3230833
     },
-    scrollwheel: false
+
   });
 
   setMarkers(map);
